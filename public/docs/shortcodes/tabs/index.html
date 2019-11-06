@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.59.1" />
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Introduction" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://hermes-signpost.netlify.com/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="" />
+<meta property="og:description" content="Tabs Tabs let you organize content by context, for example installation instructions for each supported platform.
+{{&lt; tabs &quot;uniqueid&quot; &gt;}} {{&lt; tab &quot;MacOS&quot; &gt;}} # MacOS Content {{&lt; /tab &gt;}} {{&lt; tab &quot;Linux&quot; &gt;}} # Linux Content {{&lt; /tab &gt;}} {{&lt; tab &quot;Windows&quot; &gt;}} # Windows Content {{&lt; /tab &gt;}} {{&lt; /tabs &gt;}}  Example MacOS  MacOS This is tab MacOS content.
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat stringit, frustra Saturnius uteroque inter!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hermes-signpost.netlify.com/docs/shortcodes/tabs/" />
 
-<meta property="og:updated_time" content="2014-09-28T00:00:00+00:00" />
-<title>Introduction | Hermes Signpost</title>
+<title>Tabs | Hermes Signpost</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
@@ -19,7 +19,6 @@
 
 <script defer src="/search.min.20ae6b24f4654e78be848e5dc7fd8299afe2b16a8d68e741740e53c1ed5dbddc.js" integrity="sha256-IK5rJPRlTni&#43;hI5dx/2Cma/isWqNaOdBdA5Twe1dvdw="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://hermes-signpost.netlify.com/index.xml" title="Hermes Signpost" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -258,7 +257,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/docs/shortcodes/tabs/" >
+  <a href="/docs/shortcodes/tabs/"  class="active">
       Tabs
   </a>
 
@@ -312,13 +311,81 @@ https://github.com/alex-shpak/hugo-book
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>Introduction</strong>
+  <strong>Tabs</strong>
 </header>
 
       
 <article class="markdown">
 
-<h1 id="packages-for-health-economics-analysis-in-r">Packages for health economics analysis in R</h1>
+<h1 id="tabs">Tabs</h1>
+
+<p>Tabs let you organize content by context, for example installation instructions for each supported platform.</p>
+
+<pre><code class="language-tpl">{{&lt; tabs &quot;uniqueid&quot; &gt;}}
+{{&lt; tab &quot;MacOS&quot; &gt;}} # MacOS Content {{&lt; /tab &gt;}}
+{{&lt; tab &quot;Linux&quot; &gt;}} # Linux Content {{&lt; /tab &gt;}}
+{{&lt; tab &quot;Windows&quot; &gt;}} # Windows Content {{&lt; /tab &gt;}}
+{{&lt; /tabs &gt;}}
+</code></pre>
+
+<h2 id="example">Example</h2>
+
+
+
+
+
+<div class="book-tabs">
+
+  <input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-0" checked="checked" />
+  <label for="tabs-uniqueid-0">
+    MacOS
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    <h1 id="macos">MacOS</h1>
+
+<p>This is tab <strong>MacOS</strong> content.</p>
+
+<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
+Miseratus fonte Ditis conubia.</p>
+
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
+  <label for="tabs-uniqueid-1">
+    Linux
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    <h1 id="linux">Linux</h1>
+
+<p>This is tab <strong>Linux</strong> content.</p>
+
+<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
+Miseratus fonte Ditis conubia.</p>
+
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-uniqueid" id="tabs-uniqueid-2"  />
+  <label for="tabs-uniqueid-2">
+    Windows
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    <h1 id="windows">Windows</h1>
+
+<p>This is tab <strong>Windows</strong> content.</p>
+
+<p>Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+protulit, sed sed aere valvis inhaesuro Pallas animam: qui <em>quid</em>, ignes.
+Miseratus fonte Ditis conubia.</p>
+
+  </div>
+
+</div>
+
 </article>
 
       
@@ -332,7 +399,10 @@ https://github.com/alex-shpak/hugo-book
   <aside class="book-toc levels-6 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#packages-for-health-economics-analysis-in-r">Packages for health economics analysis in R</a></li>
+<li><a href="#tabs">Tabs</a>
+<ul>
+<li><a href="#example">Example</a></li>
+</ul></li>
 </ul>
 </nav>
   </aside>

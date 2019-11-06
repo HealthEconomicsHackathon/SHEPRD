@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.59.1" />
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Introduction" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://hermes-signpost.netlify.com/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="" />
+<meta property="og:description" content=" KaTeX KaTeX shortcode let you render math typesetting in markdown document. See KaTeX
+Example {{&lt; katex [class=&quot;text-center&quot;] &gt;}} x = \begin{cases} a &amp;\text{if } b \\ c &amp;\text{if } d \end{cases} {{&lt; /katex &gt;}}    
+$$ x = \begin{cases} a &\text{if } b \\ c &\text{if } d \end{cases} $$   " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hermes-signpost.netlify.com/docs/shortcodes/katex/" />
 
-<meta property="og:updated_time" content="2014-09-28T00:00:00+00:00" />
-<title>Introduction | Hermes Signpost</title>
+<title>Katex | Hermes Signpost</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
@@ -19,7 +19,6 @@
 
 <script defer src="/search.min.20ae6b24f4654e78be848e5dc7fd8299afe2b16a8d68e741740e53c1ed5dbddc.js" integrity="sha256-IK5rJPRlTni&#43;hI5dx/2Cma/isWqNaOdBdA5Twe1dvdw="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://hermes-signpost.netlify.com/index.xml" title="Hermes Signpost" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -238,7 +237,7 @@ https://github.com/alex-shpak/hugo-book
       
         <li>
 
-  <a href="/docs/shortcodes/katex/" >
+  <a href="/docs/shortcodes/katex/"  class="active">
       Katex
   </a>
 
@@ -312,13 +311,48 @@ https://github.com/alex-shpak/hugo-book
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>Introduction</strong>
+  <strong>Katex</strong>
 </header>
 
       
 <article class="markdown">
 
-<h1 id="packages-for-health-economics-analysis-in-r">Packages for health economics analysis in R</h1>
+<h1 id="katex">KaTeX</h1>
+
+<p>KaTeX shortcode let you render math typesetting in markdown document. See <a href="https://katex.org/">KaTeX</a></p>
+
+<h2 id="example">Example</h2>
+
+<div class="book-columns flex flex-wrap">
+  
+  <div class="flex-even markdown-inner">
+    <pre><code class="language-latex">{{&lt; katex [class=&quot;text-center&quot;] &gt;}}
+x = \begin{cases}
+   a &amp;\text{if } b \\
+   c &amp;\text{if } d
+\end{cases}
+{{&lt; /katex &gt;}}
+</code></pre>
+  </div>
+  
+  <div class="flex-even markdown-inner">
+    <p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script></p>
+
+<p class="katex">
+  $$ 
+x = \begin{cases}
+   a &\text{if } b \\
+   c &\text{if } d
+\end{cases}
+ $$
+</p>
+
+  </div>
+  
+</div>
+
 </article>
 
       
@@ -332,7 +366,10 @@ https://github.com/alex-shpak/hugo-book
   <aside class="book-toc levels-6 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#packages-for-health-economics-analysis-in-r">Packages for health economics analysis in R</a></li>
+<li><a href="#katex">KaTeX</a>
+<ul>
+<li><a href="#example">Example</a></li>
+</ul></li>
 </ul>
 </nav>
   </aside>
