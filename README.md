@@ -7,6 +7,7 @@
 1. clone this repo:
 
     `git clone git@github.com:HealthEconomicsHackathon/signpost.git`
+    
 1. install [hugo](https://gohugo.io/getting-started/installing/)
 1. install blogdown from R:
 
@@ -36,13 +37,14 @@ e.g.
 
 Documentation can either be a normal 
 [Markdown](https://www.markdownguide.org/cheat-sheet/) or an [RMarkdown](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) document
-and it must be named either `index.md` or `index.Rmd`, respectively.
+and it must be named either `_index.md` or `_index.Rmd`, respectively.
 
 ### Viewing changes locally
 
 1. if using RMarkdown, compile by running from R:
 
     `blogdown::build_site()`
+    
 1. serve the site locally by running from bash:
 
     `hugo serve`
