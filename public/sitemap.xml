@@ -3,160 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/docs/example/</loc>
+    <loc>https://hermes-signpost.netlify.com/docs/discrete-event-simulation/</loc>
   </url>
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/docs/example/table-of-contents/with-toc/</loc>
+    <loc>https://hermes-signpost.netlify.com/docs/state-transition-models/markov-models/</loc>
   </url>
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/docs/example/table-of-contents/without-toc/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/posts/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/posts/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/example/table-of-contents/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/example/2nd/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/posts/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/posts/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://hermes-signpost.netlify.com/docs/state-transition-models/</loc>
   </url>
   
   <url>
     <loc>https://hermes-signpost.netlify.com/categories/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/categories/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/posts/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/categories/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/example/2nd/3rd/4th/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/example/2nd/3rd/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/example/hidden/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/shortcodes/</loc>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/shortcodes/buttons/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/shortcodes/columns/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/shortcodes/expand/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/shortcodes/hints/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/shortcodes/katex/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/shortcodes/mermaid/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://hermes-signpost.netlify.com/docs/shortcodes/tabs/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hermes-signpost.netlify.com/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hermes-signpost.netlify.com/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hermes-signpost.netlify.com/tags/</loc>
   </url>
   
 </urlset>

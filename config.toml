@@ -1,4 +1,5 @@
 languageCode = "en-us"
 title = "Hermes Signpost"
 theme = "hugo-book"
-baseURL = 'https://hermes-signpost.netlify.com/'
+baseURL = "https://hermes-signpost.netlify.com/"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]

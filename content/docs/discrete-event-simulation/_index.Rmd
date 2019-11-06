@@ -1,0 +1,11 @@
+---
+bookCollapseSection: true
+weight: 20
+title: Discrete Event Simulation
+---
+
+# Discrete Event Simulation
+
+```{r cool-plot, fig.cap='A cool plot.'}
+plot(cars, pch = 20)  # not really cool
+```
