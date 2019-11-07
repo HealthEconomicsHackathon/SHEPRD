@@ -1,29 +1,23 @@
-var treeData =
-    {
-        "children": [
-            {
-                "name": "State–Transition Model",
-                "children": [
-                    {
-                        "name": "Markov Model",
-                        "children": []
-                    },
-                    {"name": "Decision Tree + Markov Model"}
-                ]
-            },
-            {
-                "name": "Discrete Event Simulation",
-                "children": []
-            }, {
-                "name": "Dynamic Transmission Models"
-            }, {
-                "name": "Parameter Estimation and Uncertainty Rositsa",
-                "children":
-                    [{"name": "Deterministic Sensitivity Analysis)"},
-                        {"name": "Probabilistic Sensitivity Analysis)"},
-                        {"name": "Value of Information Analysis)"}]
-            }]
-    };
+var children = [];
+
+function createNode(p, children) {
+    const c = [];
+
+    if (pages[p]) {
+        pages[p].map(function(p) { createNode(p, c)})
+    }
+
+    children.push({
+        name: p,
+        children: c
+    });
+}
+
+pages["Docs"].map(function(p) {createNode(p, children)});
+
+var treeData = {
+    children: children
+};
 
 // Set the dimensions and margins of the diagram
 var margin = {top: 10, right: 90, bottom: 30, left: 20},

@@ -6,7 +6,8 @@
 
 1. clone this repo:
 
-    `git clone git@github.com:HealthEconomicsHackathon/signpost.git`
+    1. with ssh: `git clone git@github.com:HealthEconomicsHackathon/signpost.git`
+    1. or with https: `git clone https://github.com/HealthEconomicsHackathon/signpost.git`
     
 1. install [hugo](https://gohugo.io/getting-started/installing/)
 1. install blogdown from R:
