@@ -1,0 +1,26 @@
+---
+bookCollapseSection: true
+weight: 20
+title: Sensitivity Analyses and Value of Information
+---
+
+# Sensitivity Analyses and Value of Information
+
+Models are used to inform decision making and resource allocation in health care, therefore, it is important that they report point estimates for specific outcomes as well as the uncertainty surrounding these outcomes. Modellers can perform sensitivity analyses (deterministic (DSA) or probabilistic (PSA)) to report on the uncertainty of their models’ outcomes, or value of information analysis (VOI) to assess the expected gain from reducing uncertainty through some form of data collection (trial, epidemiological study, etc.). More information on parameter estimation, uncertainty, sensitivity anlyses, VOIs can be found in the following publications:
+
+1. https://www.ispor.org/docs/default-source/resources/outcomes-research-guidelines-index/model_parameter_estimation_and_uncertainty-6.pdf?sfvrsn=8bc10c8e_0
+2. https://link.springer.com/article/10.1007/s40273-014-0219-x
+
+Useful examples of R sources which can be used to perform sensitivity analyses and VOI can be found here:
+
+1. SAVI - Sheffield Accelerated Value of Information
+   SAVI can be used to evaluate uncertainty in a standardised manner (C-E (cost-effectiveness)     planes, cost-effectiveness acceptability curves (CEACs), as well as assess the expected value    of perfect information (EVPI) and expected value of perfect parameter information (EVPPI)
+  Webpage: http://savi.shef.ac.uk/SAVI/
+  GitHub: https://github.com/Sheffield-Accelerated-VoI/SAVI
+
+
+2. RANE - Rapid Assessment of Need for Evidence
+   RANE is a tool which can be used to estimate the value of research proposals.
+   Webpage: https://shiny.york.ac.uk/rane/
+   GitHub: https://github.com/david-glynn
+   https://github.com/david-glynn/OpenVOIdemo.v.0.1
