@@ -5,6 +5,4 @@ title: Discrete Event Simulation
 
 # Discrete Event Simulation
 
-```{r cool-plot, fig.cap='A cool plot.'}
-plot(cars, pch = 20)  # not really cool
-```
+#UNDER CONSTRUCTION - NO PACKAGES YET INVESTIGATED
