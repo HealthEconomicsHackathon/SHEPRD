@@ -4,4 +4,4 @@ weight: 20
 title: State Transition Models
 ---
 
-# State Transmission Models
+# State Transition Models
