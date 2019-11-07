@@ -5,7 +5,7 @@ scripts: [tree]
 bookToc: false
 ---
 
-# Packages for health economics analysis in R
+# Signposting Health Economic Packages in R for Decision Modelling
 
 
 <div id="tree"></div>

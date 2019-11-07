@@ -3,35 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/docs/state-transition-models/decision-trees/</loc>
+    <loc>https://hermes-sheprd.netlify.com/docs/state-transition-models/decision-trees/</loc>
   </url>
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/docs/discrete-event-simulation/</loc>
+    <loc>https://hermes-sheprd.netlify.com/docs/state-transition-models/markov-models/</loc>
   </url>
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/docs/state-transition-models/markov-models/</loc>
+    <loc>https://hermes-sheprd.netlify.com/docs/sensitivity-analyses-and-value-of-information/</loc>
   </url>
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/docs/state-transition-models/</loc>
+    <loc>https://hermes-sheprd.netlify.com/docs/state-transition-models/</loc>
   </url>
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/categories/</loc>
+    <loc>https://hermes-sheprd.netlify.com/categories/</loc>
   </url>
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/docs/</loc>
+    <loc>https://hermes-sheprd.netlify.com/docs/discrete-event-simulation/</loc>
   </url>
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/</loc>
+    <loc>https://hermes-sheprd.netlify.com/docs/</loc>
   </url>
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/tags/</loc>
+    <loc>https://hermes-sheprd.netlify.com/docs/dynamic-transmission-models/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hermes-sheprd.netlify.com/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hermes-sheprd.netlify.com/docs/parameter-estimation-and-uncertainty/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hermes-sheprd.netlify.com/tags/</loc>
   </url>
   
 </urlset>
