@@ -3,10 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hermes-signpost.netlify.com/docs/discrete-event-simulation/</loc>
-  </url>
-  
-  <url>
     <loc>https://hermes-signpost.netlify.com/docs/state-transition-models/markov-models/</loc>
   </url>
   
@@ -19,11 +15,23 @@
   </url>
   
   <url>
+    <loc>https://hermes-signpost.netlify.com/docs/discrete-event-simulation/</loc>
+  </url>
+  
+  <url>
     <loc>https://hermes-signpost.netlify.com/docs/</loc>
   </url>
   
   <url>
+    <loc>https://hermes-signpost.netlify.com/docs/dynamic-transmission-models/</loc>
+  </url>
+  
+  <url>
     <loc>https://hermes-signpost.netlify.com/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hermes-signpost.netlify.com/docs/parameter-estimation-and-uncertainty/</loc>
   </url>
   
   <url>
