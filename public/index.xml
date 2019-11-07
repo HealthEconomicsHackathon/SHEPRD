@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on Hermes Signpost</title>
-    <link>https://hermes-signpost.netlify.com/</link>
-    <description>Recent content in Introduction on Hermes Signpost</description>
+    <title>Introduction on SHEPRD</title>
+    <link>https://hermes-sheprd.netlify.com/</link>
+    <description>Recent content in Introduction on SHEPRD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://hermes-signpost.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hermes-sheprd.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

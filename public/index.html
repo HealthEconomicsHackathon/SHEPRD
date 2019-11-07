@@ -7,18 +7,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Introduction" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://hermes-signpost.netlify.com/" />
+<meta property="og:url" content="https://hermes-sheprd.netlify.com/" />
 
-<title>Introduction | Hermes Signpost</title>
+<title>Introduction | SHEPRD</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
 <link rel="stylesheet" href="/book.min.92b28337361d2bcca5e0ffaff5092dda7140e89d9a7a7a4dcc6055fd7d702ace.css" integrity="sha256-krKDNzYdK8yl4P&#43;v9Qkt2nFA6J2aenpNzGBV/X1wKs4=">
 
 
-<script defer src="/search.min.94fa84855079dc1b81d9bfa2d499a1ac5eab7e6f511807e810b0dad1342e67f9.js" integrity="sha256-lPqEhVB53BuB2b&#43;i1JmhrF6rfm9RGAfoELDa0TQuZ/k="></script>
+<script defer src="/search.min.948272e617e32ec187e1d3ec1747ec74034be789db6e683386ac6adabb9b0691.js" integrity="sha256-lIJy5hfjLsGH4dPsF0fsdANL54nbbmgzhqxq2rubBpE="></script>
 
-<link rel="alternate" type="application/rss+xml" href="https://hermes-signpost.netlify.com/index.xml" title="Hermes Signpost" />
+<link rel="alternate" type="application/rss+xml" href="https://hermes-sheprd.netlify.com/index.xml" title="SHEPRD" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -57,7 +57,7 @@ https://github.com/alex-shpak/hugo-book
     <aside class="book-menu fixed">
       <nav>
 <h2 class="book-brand">
-  <a href="https://hermes-signpost.netlify.com/"><span>Hermes Signpost</span>
+  <a href="https://hermes-sheprd.netlify.com/"><img src="/logo.png" alt="Logo" /><span>SHEPRD</span>
   </a>
 </h2>
 
@@ -98,8 +98,8 @@ https://github.com/alex-shpak/hugo-book
     
       
 
-  <a href="/docs/discrete-event-simulation/" >
-      Discrete Event Simulation
+  <a href="/docs/sensitivity-analyses-and-value-of-information/" >
+      Sensitivity Analyses and Value of Information
   </a>
 
 
@@ -129,6 +129,72 @@ https://github.com/alex-shpak/hugo-book
   </a>
 
 
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/discrete-event-simulation/" >
+      Discrete Event Simulation
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      <span>Dynamic Transmission Models</span>
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
+    
+      
+        
+
+  <li >
+    
+      <span>Parameter Estimation and Uncertainty</span>
     
 
     
@@ -186,10 +252,35 @@ https://github.com/alex-shpak/hugo-book
       
 <article class="markdown">
 
-<h1 id="packages-for-health-economics-analysis-in-r">Packages for health economics analysis in R</h1>
+<h1 id="signposting-health-economic-packages-in-r-for-decision-modelling">Signposting Health Economic Packages in R for Decision Modelling</h1>
 
-<p><div id="tree"></div>
-<script src="https://d3js.org/d3.v5.min.js"></script></p>
+<div id="tree"></div>
+
+<p>This webpage aims to help you navigate you through the forest of R packages and
+signpost you to the most appropriate one, given your intended health economic analysis.
+This decision tree-style compendium was written over 2 days as part of a R Hackathon
+(6th - 7th November 2019).</p>
+
+<p>Creators and current contributors are:
+<a href="https://twitter.com/nichola_naylor">@nichola_naylor</a>,
+<a href="https://twitter.com/collepto1">@collepto1</a>, <a href="https://twitter.com/rositsakolarova">@RositsaKolarova</a>,
+ <a href="https://twitter.com/kd_katdavis">@kd_katdavis</a>, <a href="https://twitter.com/alexhillphd">@alexhillphd</a>,
+  Arthi Roopan, and Monique Tan</p>
+
+<h3 id="other-work-compiling-packages-that-were-used-viewed-or-could-be-useful-in-the-future-are">Other work compiling packages that were used/viewed or could be useful in the future are:</h3>
+
+<ul>
+<li><p>For a list of packages:
+<a href="https://github.com/n8thangreen/health_economics_R_packages">https://github.com/n8thangreen/health_economics_R_packages</a></p></li>
+
+<li><p>For an overview of utilised packages by type:
+Jalal, H., Pechlivanoglou, P., Krijkamp, E., Alarid-Escudero, F., Enns, E. and Hunink, M.M., 2017. An overview of R in health decision sciences. Medical decision making, 37(7), pp.735-746.</p></li>
+
+<li><p>For a comparison of mstate vs hesim vs heemod:
+Incerti D and Jansen, A COMPARISON OF R PACKAGES FOR PREDICTION AND SIMULATION OF MULTI-STATE MODELS FOR COSTEFFECTIVENESS ANALYSIS. Value in Health (2019) <a href="https://www.valueinhealthjournal.com/article/S1098-3015(19)31764-4/pdf">https://www.valueinhealthjournal.com/article/S1098-3015(19)31764-4/pdf</a></p></li>
+</ul>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
 </article>
 
       
@@ -199,15 +290,85 @@ https://github.com/alex-shpak/hugo-book
 
 
 
+    
+
+
+    <script>pages["Docs"] = []</script>
+
+
+<script>pages["Docs"].push("Sensitivity Analyses and Value of Information")</script>
+    
+        
 
 
 
 
+    
+
+<script>pages["Docs"].push("State Transmission Models")</script>
+    
+        
+
+
+    <script>pages["State Transmission Models"] = []</script>
+
+
+<script>pages["State Transmission Models"].push("Decision Trees")</script>
+    
+        
 
 
 
 
+    
 
+<script>pages["State Transmission Models"].push("Markov Models")</script>
+    
+        
+
+
+
+
+    
+
+<script>pages["State Transmission Models"].push("Microsimulation Modelling Packages Available on CRAN")</script>
+    
+        
+
+
+
+
+    
+
+
+    
+
+<script>pages["Docs"].push("Discrete Event Simulation")</script>
+    
+        
+
+
+
+
+    
+
+<script>pages["Docs"].push("Dynamic Transmission Models")</script>
+    
+        
+
+
+
+
+    
+
+<script>pages["Docs"].push("Parameter Estimation and Uncertainty")</script>
+    
+        
+
+
+
+
+    
 
 
 
@@ -218,68 +379,8 @@ https://github.com/alex-shpak/hugo-book
 
 
     
+        <script src="tree.js"></script>
     
-
-<script>pages.push("Discrete Event Simulation")</script>
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-<script>pages.push("State Transmission Models")</script>
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="tree.js"></script>
-
-
 
 
     </div>
