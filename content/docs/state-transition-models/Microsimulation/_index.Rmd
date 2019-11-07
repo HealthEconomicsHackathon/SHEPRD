@@ -39,7 +39,6 @@ install.packages("gems")
 simulateCohort simulates the specified artificial cohort and returns an object of class ArtCohort.
  
 `transitionProbabilities` returns an object of class posteriorProbabilities that contains the transition probabilities from the initial state over time.  
- 
 `cumulativeIncidence` returns an object of class posteriorProbabilities that contains the cumulative incidence over time.
  
 **Additional Resources**:
@@ -59,98 +58,101 @@ Reference Manual on CRAN – https://cran.r-project.org/web/packages/MicSim/MicS
 **Description**: Perform continuous-time microsimulation for a wide range of demographic applications. (Individual life-courses are specified by a continuous-time multi-state model).
 - Package uses non-homogeneous continuous-time Markov chains to describe individual life-courses.
  
-Inputs/ Outputs/ Sample Code:
-Load Package:
+**Inputs/ Outputs/ Sample Code**:
+*Load Package*:
 install.packages("MicSim")
  
-Functions:
-buildTransitionMatrix supports the constructing of the ‘transition matrix’, which determines the transition pattern of the microsimulation model. The actual microsimulation is performed by micSim (sequentially) or by micSimParallel (parallel computing).
+*Functions*:
+`buildTransitionMatrix` supports the constructing of the ‘transition matrix’, which determines the transition pattern of the microsimulation model. The actual microsimulation is performed by `micSim` (sequentially) or by `micSimParallel` (parallel computing).
  
-convertToLongFormat function reshapes the output given by micSim or by micSimParallel into long format. In long format, the data comprises for each episode which an individual experiences one row.
+`convertToLongFormat` function reshapes the output given by `micSim` or by `micSimParallel` into long format. In long format, the data comprises for each episode which an individual experiences one row.
  
-convertToWideFormat reshapes the output given by micSim or by micSimParallel into wide format. In wide format, the data comprises for each episode which an individual experiences additional column entries.
+`convertToWideFormat` reshapes the output given by `micSim` or by `micSimParallel` into wide format. In wide format, the data comprises for each episode which an individual experiences additional column entries.
  
-micSim performs a continuous-time microsimulation run (sequentially, i.e., using only one CPU core).
+`micSim` performs a continuous-time microsimulation run (sequentially, i.e., using only one CPU core).
  
-micSimParallel is a parallelized version of the function micSim. That is, it runs a continuous-time microsimulation simulation distributed, i.e., using more than one CPU core.
+`micSimParallel` is a parallelized version of the function `micSim`. That is, it runs a continuous-time microsimulation simulation distributed, i.e., using more than one CPU core.
  
-setSimHorizon sets the simulation horizon of the microsimulation. The actual microsimulation is performed by micSim (sequentially) or by micSimParallel (parallel computing).
+`setSimHorizon` sets the simulation horizon of the microsimulation. The actual microsimulation is performed by micSim (sequentially) or by micSimParallel (parallel computing).
  
- Additional Resources:
-1.)   Vignette not available on CRAN
-2.)   MicSim Package Toolkit
-·      Zinn, Sabine. (2014). The MicSim Package of R: An Entry-Level Toolkit for Continuous-Time Microsimulation. International Journal of Microsimulation. 7(3): 3-32.
-3.)   Microsimulation Modelling Tutorial in R
-·      Krijkam EM, Alarid-Escudero F, Enns EA, et al. (2018). Microsimulation Modeling for Health Decision Sciences Using R: A Tutorial. Medical Decision Making 2018; 38(3): 400-422
+**Additional Resources**:
+1. Vignette not available on CRAN
+2. MicSim Package Toolkit
+  - Zinn, Sabine. (2014). The MicSim Package of R: An Entry-Level Toolkit for Continuous-Time Microsimulation. International Journal of Microsimulation. 7(3): 3-32.
+3. Microsimulation Modelling Tutorial in R
+ - Krijkam EM, Alarid-Escudero F, Enns EA, et al. (2018). Microsimulation Modeling for Health Decision Sciences Using R: A Tutorial. Medical Decision Making 2018; 38(3): 400-422
 
 
-
-MILC
-Package: MILC – Microsimulation Lung Cancer (MILC) model
+## 3. MILC
+**Package**: MILC – Microsimulation Lung Cancer (MILC) model
  
-Maintained By: Stavroula A. Chrysanthopoulou <Stavroula_Chrysanthopoulou@brown.edu>
+**Maintained By**: Stavroula A. Chrysanthopoulou <Stavroula_Chrysanthopoulou@brown.edu>
 Reference Manual on CRAN – https://cran.r-project.org/web/packages/MILC/MILC.pdf
  
-Description: Predict individual trajectories using the continuous time microsimulation model MILC, that describes the natural history of lung cancer.
--   	Dynamic, continuous time microsimulation model that describes the natural history of lung cancer in the absence of any screening or treatment components.
--   	Model accounts for age, gender, and smoking history, including smoking status, start and quit smoking ages, and average number of cigarettes smoked per day when relevant.
--   	Model comprises four main components: onset of the first malignant cell, tumor growth, disease progression, survival.
+**Description**: Predict individual trajectories using the continuous time microsimulation model MILC, that describes the natural history of lung cancer.
+- Dynamic, continuous time microsimulation model that describes the natural history of lung cancer in the absence of any screening or treatment components.
+- Model accounts for age, gender, and smoking history, including smoking status, start and quit smoking ages, and average number of cigarettes smoked per day when relevant.
+- Model comprises four main components: onset of the first malignant cell, tumor growth, disease progression, survival.
  
- 
-Inputs/Outputs/Sample Code:
-Load Package:
+**Inputs/Outputs/Sample Code**:
+*Load Package*:
 install.packages("MILC")
  
-Functions:
+*Functions*:
 age_grp returns the 5-year age group ("<40", "40-44",…,or "85+") to which an individual belongs.
  
-ci.lung estimates cumulative incidence for lung cancer mortality by age (5-years age group), gender ("male" or "female") and tumor stage at diagnosis (i.e., "localized", "regional", or "distant").
+`ci.lung` estimates cumulative incidence for lung cancer mortality by age (5-years age group), gender ("male" or "female") and tumor stage at diagnosis (i.e., "localized", "regional", or "distant").
  
-current.other estimates cumulative incidence for other cause (not lung cancer) mortality, for current smokers by age (5-years age group), gender ("male" or "female") and smoking intensity group ("1-10", "11-20", or "21+" cigarettes) based on the average number of cigarettes smoked per day.
+`current.other` estimates cumulative incidence for other cause (not lung cancer) mortality, for current smokers by age (5-years age group), gender ("male" or "female") and smoking intensity group ("1-10", "11-20", or "21+" cigarettes) based on the average number of cigarettes smoked per day.
  
-d_grp returns the smoking intensity group ("1-10", "11-20", or "21+" cigarettes) of an individual based on the average number of smoked per day
+`d_grp` returns the smoking intensity group ("1-10", "11-20", or "21+" cigarettes) of an individual based on the average number of smoked per day
  
-former.other estimates cumulative incidence for other cause (not lung cancer) mortality, for former smokers by age (5-years age group), gender ("male" or "female") and smoking intensity group ("1-10", "11-20", or "21+" cigarettes) based on the average number of cigarettes smoked per day.
+`former.other` estimates cumulative incidence for other cause (not lung cancer) mortality, for former smokers by age (5-years age group), gender ("male" or "female") and smoking intensity group ("1-10", "11-20", or "21+" cigarettes) based on the average number of cigarettes smoked per day.
  
-HT_mal estimates cumulative hazard up to age t for the onset of first malignant cell, given gender, smoking status and smoking intensity.
+`HT_mal` estimates cumulative hazard up to age t for the onset of first malignant cell, given gender, smoking status and smoking intensity.
  
-ht_mal_int estimates cumulative hazard for the onset of the first malignant cell between two time points (ages).
+`ht_mal_int` estimates cumulative hazard for the onset of the first malignant cell between two time points (ages).
  
-nat_hist runs the MILC model and predicts a full lung cancer trajectory depending on the age, gender and smoking history of an individual.
+`nat_hist` runs the MILC model and predicts a full lung cancer trajectory depending on the age, gender and smoking history of an individual.
  
-never.other estimates the cumulative incidence for other cause (not lung cancer) mortality, for non smokers by age (5-years age group), and gender ("male" or "female").
+`never.other` estimates the cumulative incidence for other cause (not lung cancer) mortality, for non smokers by age (5-years age group), and gender ("male" or "female").
  
-tdeath_lung predicts the age (years) at which a person may die of lung cancer given gender, age and tumor stage at diagnosis.
+`tdeath_lung` predicts the age (years) at which a person may die of lung cancer given gender, age and tumor stage at diagnosis.
  
-tdeath_other predicts the age (years) at which a person may die from a cause other than lung cancer given age, gender and smoking intensity, when relevant.
+`tdeath_other` predicts the age (years) at which a person may die from a cause other than lung cancer given age, gender and smoking intensity, when relevant.
  
-t_mal predicts the age at the onset of the first malignant given gender and smoking history, when relevant.
+`t_mal` predicts the age at the onset of the first malignant given gender and smoking history, when relevant.
  
-t_prog simulates the time points (years) from the onset of the first malignant cell to major states in the natural history of lung cancer, i.e., the time at the beginning of the regional (Treg), and distant (Tdist) stage, and time at diagnosis (Tdiagn).
-t_vol predicts the time (years) at which tumor has reached volume V from the onset of the first malignant cell.
+`t_prog` simulates the time points (years) from the onset of the first malignant cell to major states in the natural history of lung cancer, i.e., the time at the beginning of the regional (Treg), and distant (Tdist) stage, and time at diagnosis (Tdiagn).
+
+`t_vol` predicts the time (years) at which tumor has reached volume V from the onset of the first malignant cell.
   
-Additional Resources:
-1.)   Vignette not available on CRAN
-2.)   Microsimulation Modelling Tutorial in R
-·      Krijkam EM, Alarid-Escudero F, Enns EA, et al. (2018). Microsimulation Modeling for Health Decision Sciences Using R: A Tutorial. Medical Decision Making 2018; 38(3): 400-422
+**Additional Resources**:
+1. Vignette not available on CRAN
+2. Microsimulation Modelling Tutorial in R
+  - Krijkam EM, Alarid-Escudero F, Enns EA, et al. (2018). Microsimulation Modeling for Health Decision Sciences Using R: A Tutorial. Medical Decision Making 2018; 38(3): 400-422
  
 
-
-Hesim
-Package: hesim - Health Economic Simulation Modeling and Decision Analysis 
-Reference Manual on CRAN –
+## 4. hesim
+**Package**: hesim - Health Economic Simulation Modeling and Decision Analysis 
+Reference Manual on CRAN – https://cran.r-project.org/web/packages/hesim/hesim.pdf
   
-Maintained By: Devin Incerti <devin.incerti @gmail.com>
-Description: Parametrize, simulate, and analyze health-economic simulation models.
--   	Supports N-state partitioned survival models and continuous time state transition models parametrized using survival or multi-state modelling.
-Note information taken from these sources (Accessed 07/11/2019):
-CRAN index: https://cran.r-project.org/web/packages/hesim/index.html
-Manual: https://cran.r-project.org/web/packages/hesim/hesim.pdf
-Authors: Devin Incerti and Jeroen P. Jansen
-Cited vignettes: https://cran.r-project.org/web/packages/hesim/vignettes/intro.html
+**Maintained By**: Devin Incerti <devin.incerti @gmail.com>
+
+**Description**: Parametrize, simulate, and analyze health-economic simulation models.
+- Supports N-state partitioned survival models and continuous time state transition models parametrized using survival or multi-state modelling.
+
+- Note information taken from these sources (Accessed 07/11/2019):
+  - CRAN index: https://cran.r-project.org/web/packages/hesim/index.html
+  - Manual: https://cran.r-project.org/web/packages/hesim/hesim.pdf
+    - Authors: Devin Incerti and Jeroen P. Jansen
+  - Cited vignettes:https://cran.r-project.org/web/packages/hesim/vignettes/intro.html
+
 This package can be used to simulate disease progression amongst a cohort of patients. It can also parameterise a decision model, using the simulated disease progression model and inputs related to patient cost and treatment effect. For references of these approaches please see “Description” within the package manual. There are two different approaches for individual-level and cohort models. The package can simulate a group of individual patients (i.e. a patient id for each patient). 
+
 Users can incorporate survival models or multistate models into your disease progression modelling. This package seems useful if you have datasets on epidemiological and cost data as you can integrate data analyses (such as survival analysis for disease progression and regression analyses for costs) with health economic decision analysis. However, you can also just state the input parameter distribution values you want to use. 
-How do I input my data to it/what inputs does it take?:
+
+**How do I input my data to it/what inputs does it take?**:
 hesim_data object with the function hesim_data() - based off of data.table 
 There is code to do this in the vignette. [https://cran.r-project.org/web/packages/hesim/vignettes/intro.html ]
 After doing this you end up with the following data.table input (taken vignette linked above):
