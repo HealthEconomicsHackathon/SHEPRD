@@ -1,6 +1,5 @@
 ---
 bookCollapseSection: true
-weight: 20
 title: Discrete Event Simulation
 ---
 

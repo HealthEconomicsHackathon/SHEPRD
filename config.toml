@@ -1,5 +1,8 @@
 languageCode = "en-us"
-title = "Hermes Signpost"
+title = "SHEPRD"
 theme = "hugo-book"
-baseURL = "https://hermes-signpost.netlify.com/"
+baseURL = "https://hermes-sheprd.netlify.com/"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[params]
+BookLogo = 'logo.png'
