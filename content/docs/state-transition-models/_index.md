@@ -1,7 +1,7 @@
 ---
 bookCollapseSection: true
 weight: 20
-title: State Transmission Models
+title: State Transition Models
 ---
 
 # State Transmission Models
