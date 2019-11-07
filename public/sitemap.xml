@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hermes-sheprd.netlify.com/docs/state-transition-models/decision-trees/</loc>
+  </url>
+  
+  <url>
     <loc>https://hermes-sheprd.netlify.com/docs/state-transition-models/markov-models/</loc>
   </url>
   

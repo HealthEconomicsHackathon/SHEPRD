@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="/book.min.92b28337361d2bcca5e0ffaff5092dda7140e89d9a7a7a4dcc6055fd7d702ace.css" integrity="sha256-krKDNzYdK8yl4P&#43;v9Qkt2nFA6J2aenpNzGBV/X1wKs4=">
 
 
-<script defer src="/search.min.78a18549588a80899e020d5149d3a7b8355c042ab6e951a6c0b52a249d8a8780.js" integrity="sha256-eKGFSViKgImeAg1RSdOnuDVcBCq26VGmwLUqJJ2Kh4A="></script>
+<script defer src="/search.min.d0ce364603fc3307c45cd06d27a540aa0c0a80458fe35d0484edc772bfb9307b.js" integrity="sha256-0M42RgP8MwfEXNBtJ6VAqgwKgEWP410EhO3Hcr&#43;5MHs="></script>
 
 <link rel="alternate" type="application/rss+xml" href="https://hermes-sheprd.netlify.com/docs/state-transition-models/markov-models/index.xml" title="SHEPRD" />
 <!--
@@ -137,6 +137,32 @@ https://github.com/alex-shpak/hugo-book
 
   
   <ul>
+    
+      
+        
+
+  <li >
+    
+      
+
+  <a href="/docs/state-transition-models/decision-trees/" >
+      Decision Trees
+  </a>
+
+
+    
+
+    
+
+
+
+
+
+
+  </li>
+
+
+      
     
       
         
@@ -290,6 +316,52 @@ https://github.com/alex-shpak/hugo-book
 <article class="markdown">
 
 <h1 id="markov-models">Markov Models</h1>
+
+<h2 id="package">Package:</h2>
+
+<p>heemod</p>
+
+<h3 id="maintained-by">maintained by:</h3>
+
+<p>Kevin Zarca <a href="mailto:kevin.zarca@gmail.com">kevin.zarca@gmail.com</a>
+( <a href="https://cran.r-project.org/web/packages/heemod/heemod.pdf">https://cran.r-project.org/web/packages/heemod/heemod.pdf</a> and <a href="https://cran.r-project.org/web/packages/heemod/index.html">https://cran.r-project.org/web/packages/heemod/index.html</a>)</p>
+
+<h2 id="what-does-this-package-do">What does this package do?</h2>
+
+<p>It constructs and runs Markov models for the purpose of health economic decision analysis.</p>
+
+<p>It also has useful functions that could be used outside of a different Markov model framework. Such as Nb also has useful functions like rate_to_prob() and or_to_prob(or, p) that convert rates and odds ratios into transition probabilities.
+This package seems useful for when there are the same states across the strategy comparators.</p>
+
+<p>Further functionality was not explored currently within this exercise. However, the package description also states the package allows for deterministic and probabilistic sensitivity analysis, heterogeneity analysis, time dependency on state-time and model-time (semi-Markov and non-homogeneous Markov models).</p>
+
+<h2 id="how-do-i-input-my-data-to-it-what-inputs-does-it-take">How do I input my data to it/what inputs does it take?</h2>
+
+<p>Users directly input values into vectors that are run through different functions</p>
+
+<h2 id="what-outputs-do-i-get">What outputs do I get?</h2>
+
+<p>In terms of cost-effectiveness analysis, run_model() gives you an R object which includes outputs like a data.frame showing expected value costs and effects for each strategy</p>
+
+<h2 id="sample-code">Sample code</h2>
+
+<h2 id="other-helpful-resources">Other helpful resources</h2>
+
+<ul>
+<li>Vignettes for this package were found at:<br />
+<a href="https://cran.r-project.org/web/packages/heemod/vignettes/a_introduction.html">https://cran.r-project.org/web/packages/heemod/vignettes/a_introduction.html</a></li>
+<li>Markov Models for Health Economic Evaluations: The R Package heemod Antoine Filipovi´c-Pierucci, Kevin Zarca and Isabelle Durand-Zaleski (2017). (<a href="https://arxiv.org/pdf/1702.03252.pdf">https://arxiv.org/pdf/1702.03252.pdf</a> )</li>
+</ul>
+
+<h2 id="other-packages-to-explore-but-not-detailed-here">Other packages to explore but not detailed here:</h2>
+
+<ul>
+<li>DARTH : have information on github but nothing on CRAN at present.<br />
+The packages include:
+-Darthpack (<a href="https://darth-git.github.io/darthpack/">https://darth-git.github.io/darthpack/</a>)
+-dampack (<a href="https://github.com/DARTH-git/dampack">https://github.com/DARTH-git/dampack</a>)</li>
+<li>mstate (<a href="https://cran.r-project.org/web/packages/mstate/index.html">https://cran.r-project.org/web/packages/mstate/index.html</a>)</li>
+</ul>
 </article>
 
       
@@ -314,7 +386,19 @@ https://github.com/alex-shpak/hugo-book
   <aside class="book-toc levels-6 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#markov-models">Markov Models</a></li>
+<li><a href="#markov-models">Markov Models</a>
+<ul>
+<li><a href="#package">Package:</a>
+<ul>
+<li><a href="#maintained-by">maintained by:</a></li>
+</ul></li>
+<li><a href="#what-does-this-package-do">What does this package do?</a></li>
+<li><a href="#how-do-i-input-my-data-to-it-what-inputs-does-it-take">How do I input my data to it/what inputs does it take?</a></li>
+<li><a href="#what-outputs-do-i-get">What outputs do I get?</a></li>
+<li><a href="#sample-code">Sample code</a></li>
+<li><a href="#other-helpful-resources">Other helpful resources</a></li>
+<li><a href="#other-packages-to-explore-but-not-detailed-here">Other packages to explore but not detailed here:</a></li>
+</ul></li>
 </ul>
 </nav>
   </aside>
