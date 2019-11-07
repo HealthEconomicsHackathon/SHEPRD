@@ -1,69 +1,32 @@
 <script>var pages = [];</script>
-{{ $bookSection := default "docs" .Site.Params.BookSection  }}
-{{ if eq $bookSection "*" }}
-{{ .Scratch.Set "BookSections" .Site.Sections }}
-{{ else }}
-{{ $bookSections := where .Site.Sections "Section" $bookSection }}
-{{ .Scratch.Set "BookSections" $bookSections }}
-{{ end }}
 
-{{ $sections := .Scratch.Get "BookSections" }}
-{{/* If there is only one section to render then render its children, else render all sections */}}
-{{ if eq (len $sections) 1 }}
-{{ with index $sections 0 }}
-{{ template "children" (dict "Section" . "CurrentPage" $) }}
-{{ end }}
-{{ else }}
-    {{ range where $sections "Params.bookhidden" "!=" true }}
-    {{ template "section" (dict "Section" . "CurrentPage" $) }}
-    {{ end }}
-{{ end }}
+{{ $parent := "root" }}
+
+{{ range .Pages }}
+    {{ template "section" .}}
+{{end}}
 
 {{ define "section" }}
-{{ with .Section }}
-
-    {{ if .Content }}
-    {{ template "push-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
+{{ $parent := .Title }}
+{{ if gt (len .Pages) 0 }}
+    <script>pages["{{ $parent }}"] = []</script>
+{{ end }}
+{{ range .Pages }}
+<script>pages["{{ $parent }}"].push("{{ .Title }}")</script>
+    {{ if eq .Kind "section" }}
+        {{ template "section" . }}
     {{ else }}
-    <script>pages.push("{{ .Title }}")</script>
+        {{ template "page" }}
     {{ end }}
-
-    {{ template "children" (dict "Section" . "CurrentPage" $.CurrentPage) }}
-
 {{ end }}
 {{ end }}
 
-{{ define "children" }}
-{{ $ancestor := .Section.IsAncestor .CurrentPage }}
-{{ $collapsed := .Section.Params.bookCollapseSection }}
-
-{{ if or $ancestor (not $collapsed) }}
-{{ with .Section }}
-
-{{ range where .Pages "Params.bookhidden" "!=" "true" }}
-{{ if eq .Kind "section" }}
-{{ template "section" (dict "Section" . "CurrentPage" $.CurrentPage) }}
-{{ else if and (eq .Kind "page") .Content }}
-
-{{- template "push-link" (dict "Page" . "CurrentPage" $.CurrentPage) -}}
-
-{{ end }}
-{{ end }}
-
-{{ end }}
-{{ end }}
-
-{{ end }}
-
-{{ define "push-link" }}
-{{ with .Page }}
-<script>pages.push("{{ .Title }}")</script>
-{{ end }}
+{{ define "page" }}
+    <script>console.log("page", "{{.Title}}"); pages.push("{{ .Title }}")</script>
 {{ end }}
 
 {{ if (isset .Params "scripts") }}
-{{ range .Params.scripts }}
-<script src="{{ . }}.js"></script>
-{{ end }}
+    {{ range .Params.scripts }}
+        <script src="{{ . }}.js"></script>
+    {{ end }}
 {{end}}
-
