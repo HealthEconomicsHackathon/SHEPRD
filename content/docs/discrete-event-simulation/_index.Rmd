@@ -1,6 +1,7 @@
 ---
 bookCollapseSection: true
 title: Discrete Event Simulation
+output: md_document
 ---
 
 # Discrete Event Simulation

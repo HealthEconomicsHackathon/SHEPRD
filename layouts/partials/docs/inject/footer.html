@@ -12,7 +12,7 @@
     <script>pages["{{ $parent }}"] = []</script>
 {{ end }}
 {{ range .Pages }}
-<script>pages["{{ $parent }}"].push("{{ .Title }}")</script>
+<script>pages["{{ $parent }}"].push(["{{ .Title }}", "{{ .Permalink }}"])</script>
     {{ if eq .Kind "section" }}
         {{ template "section" . }}
     {{ else }}

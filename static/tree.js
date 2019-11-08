@@ -1,14 +1,17 @@
 var children = [];
 
 function createNode(p, children) {
-    const c = [];
+    var c = [];
+    var name = p[0];
+    var href = p[1];
 
-    if (pages[p]) {
-        pages[p].map(function(p) { createNode(p, c)})
+    if (pages[name]) {
+        pages[name].map(function(p) { createNode(p, c)})
     }
 
     children.push({
-        name: p,
+        name: name,
+        href: href,
         children: c
     });
 }
@@ -112,6 +115,7 @@ function update(source) {
         .text(function (d) {
             return d.data.name;
         })
+        .on("click", goTo)
         .call(wrap, 100);
 
     // UPDATE
@@ -244,5 +248,9 @@ function update(source) {
                 }
             }
         });
+    }
+
+    function goTo(node) {
+        window.location.href = node.data.href;
     }
 }
