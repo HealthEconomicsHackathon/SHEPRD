@@ -13,7 +13,7 @@ output: html_document
 See also https://www.ispor.org/docs/default-source/resources/outcomes-research-guidelines-index/modeling_using_discrete_event_simulation-4.pdf?sfvrsn=ef593594_0
 
 
-## Why & when might I use one?
+## When might I use this?
 
 These models are suited to modelling more complex conditions where there are numerous potential outcomes and events, for example a chronic disease that will have a wide range of different events and complications. Individual patient history and subsequent events impact the event likelihood. There are no fixed discrete time intervals so such models can be more flexible.
 DES models can also be used to compare situations of constrained resources.

@@ -4,13 +4,15 @@ title: Dynamic Transmission Models
 output: html_document
 ---
 
+# Dynamic Transmission Models
+
 ## Introduction:
 Dynamic models are for communicable diseases. Unlike the assumption of static models where infection risk is constant, dynamic models key feature is that this infection risk parameter is variable. These models can be deterministic or stochastic, individual or cohort based. 
 
 See also https://www.ispor.org/docs/default-source/resources/outcomes-research-guidelines-index/dynamic_transmission_modeling-5.pdf?sfvrsn=86c71849_0
 
 
-## Why & when might I use one?
+## When might I use this?
 The key feature of these models is that infectious risk varies throughout the time of modelling with the number of infectious agents present. 
 Indirect effects are accounted for by these models eg. herd immunity due to mass vaccination
 These models are useful for examining interventions and their impact on pathogen ecology/life cycle and also exploring an intervention’s impact on transmission. This can either be through:
@@ -21,4 +23,5 @@ These models are useful for examining interventions and their impact on pathogen
 Common examples for these models are measuring impact of a vaccine in a population, use of antivirals or biosecurity/isolation measures in disease outbreaks.
 E.g Assessing the potential malaria risk to the UK (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2845590/) 
 
-# Package descriptions to be added here
+## Packages
+[Add package description here]

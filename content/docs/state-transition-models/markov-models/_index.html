@@ -368,6 +368,60 @@ summary {
 
 <div id="markov-models" class="section level1">
 <h1>Markov Models</h1>
+<p>A comparison of some of the main Markov model packages from:</p>
+<ul>
+<li>Incerti D and Jansen, A COMPARISON OF R PACKAGES FOR PREDICTION AND SIMULATION OF MULTI-STATE MODELS FOR COSTEFFECTIVENESS ANALYSIS. Value in Health (2019) <a href="https://www.valueinhealthjournal.com/article/S1098-3015(19)31764-4/pdf" class="uri">https://www.valueinhealthjournal.com/article/S1098-3015(19)31764-4/pdf</a></li>
+</ul>
+<p>And information from other sources such as: For an overview of utilised packages by type: Jalal H, Pechlivanoglou</p>
+<ul>
+<li>P, Krijkamp E, Alarid-Escudero F, Enns EA, Hunink MGM. An Overview of R in Health Decision Sciences. Med Decis Mak. 2017;37(7):735-746. <a href="doi:10.1177/0272989X16686559" class="uri">doi:10.1177/0272989X16686559</a> <a href="http://darthworkgroup.com/publications/" class="uri">http://darthworkgroup.com/publications/</a></li>
+</ul>
+<div id="mstate" class="section level3">
+<h3>mstate</h3>
+<p><a href="https://cran.r-project.org/web/packages/mstate/index.html" class="uri">https://cran.r-project.org/web/packages/mstate/index.html</a></p>
+<ul>
+<li>For the analysis of competing risks and multi-State models. Covers all steps of the analysis of multi-state models, from model building and data preparation to estimation and graphical representation of the results. It can be applied to non- and semi-parametric (Cox) models. The package is also suitable for competing risks models, as they are a special category of multi-state models.https://www.jstatsoft.org/article/view/v038i07</li>
+<li>supports both cohort- and individual-level models</li>
+<li>heterogeniety: designed to simulate a single covariate profile at a time</li>
+<li>does not have probablistic (PSA) function</li>
+<li>integrated with flexible survival models (e.g., parametric, splines, fractional polynomials, Cox regression)</li>
+<li>in continuous time</li>
+<li>NOT integrated with cost-effectiveness analyses</li>
+<li>See mstate vignettes&amp; Manuals - <a href="https://cran.r-project.org/web/packages/mstate/vignettes/Tutorial.pdf" class="uri">https://cran.r-project.org/web/packages/mstate/vignettes/Tutorial.pdf</a> <a href="https://cran.r-project.org/web/packages/mstate/index.html" class="uri">https://cran.r-project.org/web/packages/mstate/index.html</a></li>
+<li>Multistate models for estimating competing risks (E.g. in-hospital mortality): <a href="https://cran.r-project.org/web/packages/survival/vignettes/compete.pdf" class="uri">https://cran.r-project.org/web/packages/survival/vignettes/compete.pdf</a></li>
+</ul>
+</div>
+<div id="hesim" class="section level3">
+<h3>hesim</h3>
+<p><a href="https://cran.r-project.org/web/packages/hesim/" class="uri">https://cran.r-project.org/web/packages/hesim/</a></p>
+<ul>
+<li>For health economic simulation modeling and decision analysis that provides a general framework for integrating statistical analyses with economic evaluation. <a href="https://hesim-dev.github.io/hesim/" class="uri">https://hesim-dev.github.io/hesim/</a></li>
+<li>fastest(eg could simulate a parametric individual-level “clock reset” multi-state model with 1,000 patients and 100 PSA iterations thousands of times faster than mstate)</li>
+<li>cohort-level models still under development, focus on individual population models</li>
+<li>heterogeniety: can be run for a population of heterogeneous patients</li>
+<li>natively supports PSA</li>
+<li>integrated with flexible survival models (e.g., parametric, splines, fractional polynomials, Cox regression)</li>
+<li>in continuous time</li>
+<li>has functions that can be used to directly perform cost-effectiveness analyses and represent decision uncertainty</li>
+<li>See - <a href="https://cran.r-project.org/web/packages/hesim/vignettes/intro.html" class="uri">https://cran.r-project.org/web/packages/hesim/vignettes/intro.html</a> For continuous time state transition models - <a href="https://cran.r-project.org/web/packages/hesim/vignettes/ctstm.html" class="uri">https://cran.r-project.org/web/packages/hesim/vignettes/ctstm.html</a></li>
+<li>Returns table of ICER values (see “intro” Vignette linked above)</li>
+<li>Useful if have datasets on epidemiological and cost data so can intergrate data analyses (such as survival analysis for disease pregression and regression analyses for costs) with health economic decision analysis. However, you can also just state the input values you want to use.</li>
+</ul>
+</div>
+<div id="heemod" class="section level3">
+<h3>heemod</h3>
+<p><a href="https://cran.r-project.org/web/packages/heemod/index.html" class="uri">https://cran.r-project.org/web/packages/heemod/index.html</a></p>
+<ul>
+<li>For Markov models implementing most of the modelling and reporting features described in reference textbooks and guidelines: deterministic and probabilistic sensitivity analysis, heterogeneity analysis, time dependency on state-time and model-time (semi-Markov and non-homogeneous Markov models), etc.) <a href="https://arxiv.org/pdf/1702.03252.pdf" class="uri">https://arxiv.org/pdf/1702.03252.pdf</a></li>
+<li>supports both cohort- and individual-level models</li>
+<li>heterogeniety: can be run for a population of heterogeneous patients</li>
+<li>natively supports PSA</li>
+<li>NOT easily integrated with flexible survival models</li>
+<li>in discrete time</li>
+<li>has functions that can be used to directly perform cost-effectiveness analyses and represent decision uncertainty</li>
+<li>more detail below</li>
+</ul>
+</div>
 <div id="package" class="section level2">
 <h2>Package:</h2>
 <p>heemod</p>
@@ -384,14 +438,46 @@ summary {
 </div>
 <div id="how-do-i-input-my-data-to-itwhat-inputs-does-it-take" class="section level2">
 <h2>How do I input my data to it/what inputs does it take?</h2>
-<p>Users directly input values into vectors that are run through different functions</p>
+<p>Users directly input values into vectors that are run through different functions<br />
+<a href="https://cran.r-project.org/web/packages/heemod/vignettes/a_introduction.html" class="uri">https://cran.r-project.org/web/packages/heemod/vignettes/a_introduction.html</a></p>
+<p>Directly input values into vectors that are run through different functions * TRANSITION PROBABILITIES With a matrix, using define_transition()</p>
+<ul>
+<li>STATE VALUES For each state, define values using define_state()</li>
+</ul>
+<p>Good for when there are the same states across the comparison strategies - “strategies should have the same states and state value names. “ (from heemod manual - <a href="https://cran.r-project.org/web/packages/heemod/heemod.pdf" class="uri">https://cran.r-project.org/web/packages/heemod/heemod.pdf</a>)</p>
 </div>
 <div id="what-outputs-do-i-get" class="section level2">
 <h2>What outputs do I get?</h2>
 <p>In terms of cost-effectiveness analysis, run_model() gives you an R object which includes outputs like a data.frame showing expected value costs and effects for each strategy</p>
+<p>run_model() gives you an R object which includes outputs like a data.frame showing expected value costs and effects for each strategy</p>
+<table>
+<thead>
+<tr class="header">
+<th>cost</th>
+<th align="center">life.years</th>
+<th align="center">n_indiv</th>
+<th align="right">strategy_names</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>383186.2</td>
+<td align="center">676.0202</td>
+<td align="center">100</td>
+<td align="right">I</td>
+</tr>
+<tr class="even">
+<td>573229.5</td>
+<td align="center">870.4081</td>
+<td align="center">100</td>
+<td align="right">II</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="sample-code" class="section level2">
 <h2>Sample code</h2>
+<p>See work under “Vignettes” on the following CRAN link- <a href="https://cran.r-project.org/web/packages/heemod/index.html" class="uri">https://cran.r-project.org/web/packages/heemod/index.html</a></p>
 </div>
 <div id="other-helpful-resources" class="section level2">
 <h2>Other helpful resources</h2>
@@ -401,12 +487,10 @@ summary {
 <li>Markov Models for Health Economic Evaluations: The R Package heemod Antoine Filipovi´c-Pierucci, Kevin Zarca and Isabelle Durand-Zaleski (2017). (<a href="https://arxiv.org/pdf/1702.03252.pdf" class="uri">https://arxiv.org/pdf/1702.03252.pdf</a> )</li>
 </ul>
 </div>
-<div id="other-packages-to-explore-but-not-detailed-here" class="section level2">
-<h2>Other packages to explore but not detailed here:</h2>
+<div id="other-packages" class="section level2">
+<h2>Other packages:</h2>
 <ul>
-<li>DARTH : have information on github but nothing on CRAN at present.<br />
-The packages include: -Darthpack (<a href="https://darth-git.github.io/darthpack/" class="uri">https://darth-git.github.io/darthpack/</a>) -dampack (<a href="https://github.com/DARTH-git/dampack" class="uri">https://github.com/DARTH-git/dampack</a>)</li>
-<li>mstate (<a href="https://cran.r-project.org/web/packages/mstate/index.html" class="uri">https://cran.r-project.org/web/packages/mstate/index.html</a>)</li>
+<li>DARTH : The packages include: -Darthpack (<a href="https://darth-git.github.io/darthpack/" class="uri">https://darth-git.github.io/darthpack/</a>) -dampack (<a href="https://github.com/DARTH-git/dampack" class="uri">https://github.com/DARTH-git/dampack</a>)</li>
 </ul>
 </div>
 </div>

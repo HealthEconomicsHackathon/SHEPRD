@@ -7,7 +7,7 @@ output: html_document
 VOI is a quantitative, systematic method to assess decision uncertainty and evaluate existing evidence to determine if new technology/interventions will provide a return on investment. 
 See also: https://www.ispor.org/heor-resources/good-practices-for-outcomes-research/article/value-of-information-analysis-for-research-decisions-an-introduction
 
-## Why & when Might I use one?
+## When might I use this?
 VOI can be used in several scenarios and is becoming an increasingly utilised tool.
 Eg. Funders examining a range of projects can rank the return expected from each and make funding choices from this
 Eg. As an alternative to traditional methods such as power calculations to determine study sample size
