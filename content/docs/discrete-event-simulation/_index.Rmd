@@ -1,10 +1,8 @@
 ---
 bookCollapseSection: true
 title: Discrete Event Simulation
-output: md_document
+output: html_document
 ---
-
-# Discrete Event Simulation
 
 ## Introduction
 
@@ -13,11 +11,11 @@ output: md_document
 See also https://www.ispor.org/docs/default-source/resources/outcomes-research-guidelines-index/modeling_using_discrete_event_simulation-4.pdf?sfvrsn=ef593594_0
 
 
-## Why & When Might I use one?
+## Why & when might I use one?
 
 These models are suited to modelling more complex conditions where there are numerous potential outcomes and events, for example a chronic disease that will have a wide range of different events and complications. Individual patient history and subsequent events impact the event likelihood. There are no fixed discrete time intervals so such models can be more flexible.
 DES models can also be used to compare situations of constrained resources.
-Some common uses of DES models are for more complex chronic diseases eg. diabetic patients and the multiple outcomes and complications . Constrained resource models might look at things such as hospital wait times and resource allocation.
+Some common uses of DES models are for more complex chronic diseases eg. diabetic patients and the multiple outcomes and complications. Constrained resource models might look at things such as hospital wait times and resource allocation.
 
 
 # Package descriptions to be added here
