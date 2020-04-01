@@ -22,12 +22,15 @@ This is not exhaustive but covers some of the key packages and coding literature
 
 ### Other work compiling packages that were used/viewed or could be useful in the future are:
 
-Other work compiling packages and relevant information that were used when sourcing information and/ or could be useful in the future are:
-*n8thangreen / health_economics_R_packages. https://github.com/n8thangreen/health_economics_R_packages [last accessed 28/02/2020]
-*DARTH (2020) “Be in the Know” http://darthworkgroup.com/helpful-resources/ [last accessed 28/02/2020]
-*For an overview of utilised packages by type: Jalal H, Pechlivanoglou P, Krijkamp E, Alarid-Escudero F, Enns EA, Hunink MGM. An Overview of R in Health Decision Sciences. Med Decis Mak. 2017;37(7):735-746. doi:10.1177/0272989X16686559 http://darthworkgroup.com/publications/
-*For a comparison of mstate vs hesim vs heemod: Incerti D and Jansen, A COMPARISON OF R PACKAGES FOR PREDICTION AND SIMULATION OF MULTI-STATE MODELS FOR COSTEFFECTIVENESS ANALYSIS. Value in Health (2019) https://www.valueinhealthjournal.com/article/S1098-3015(19)31764-4/pdf
-*This work describes a framework for R coding and health economics that could be implemented in your coding:
+* n8thangreen / health_economics_R_packages. https://github.com/n8thangreen/health_economics_R_packages [last accessed 28/02/2020]
+
+* DARTH (2020) “Be in the Know” http://darthworkgroup.com/helpful-resources/ [last accessed 28/02/2020]
+
+* For an overview of utilised packages by type: Jalal H, Pechlivanoglou P, Krijkamp E, Alarid-Escudero F, Enns EA, Hunink MGM. An Overview of R in Health Decision Sciences. Med Decis Mak. 2017;37(7):735-746. doi:10.1177/0272989X16686559 http://darthworkgroup.com/publications/
+
+* For a comparison of mstate vs hesim vs heemod: Incerti D and Jansen, A COMPARISON OF R PACKAGES FOR PREDICTION AND SIMULATION OF MULTI-STATE MODELS FOR COSTEFFECTIVENESS ANALYSIS. Value in Health (2019) https://www.valueinhealthjournal.com/article/S1098-3015(19)31764-4/pdf
+
+* This work describes a framework for R coding and health economics that could be implemented in your coding:
 Alarid-Escudero, F., Krijkamp, E.M., Pechlivanoglou, P., Jalal, H., Kao, S.Y.Z., Yang, A. and Enns, E.A., 2019. A need for change! A coding framework for improving transparency in decision modeling. PharmacoEconomics, 37(11), pp.1329-1339. 
 
 ## We have split different health economic modelling approaches by ISPOR task-force classifications:
