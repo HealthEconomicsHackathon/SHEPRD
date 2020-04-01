@@ -1,0 +1,25 @@
+---
+title: Value of Information Analysis
+output: html_document
+---
+
+## Introduction
+VOI is a quantitative, systematic method to assess decision uncertainty and evaluate existing evidence to determine if new technology/interventions will provide a return on investment. 
+See also: https://www.ispor.org/heor-resources/good-practices-for-outcomes-research/article/value-of-information-analysis-for-research-decisions-an-introduction
+
+## Why & when Might I use one?
+VOI can be used in several scenarios and is becoming an increasingly utilised tool.
+Eg. Funders examining a range of projects can rank the return expected from each and make funding choices from this
+Eg. As an alternative to traditional methods such as power calculations to determine study sample size
+Eg. Perform an economic evaluation of the next steps in a project. 
+RANE - Rapid Assessment of Need for Evidence
+RANE is a tool which can be used to estimate the value of research proposals.
+Webpage: https://shiny.york.ac.uk/rane/
+GitHub: https://github.com/david-glynn
+https://github.com/david-glynn/OpenVOIdemo.v.0.1
+SAVI - Sheffield Accelerated Value of Information
+SAVI can be used to evaluate uncertainty in a standardised manner (C-E (cost-effectiveness)planes, cost-effectiveness acceptability curves (CEACs), as well as assess the expected value of perfect information (EVPI) and expected value of perfect parameter information (EVPPI)
+Webpage: http://savi.shef.ac.uk/SAVI/
+GitHub: https://github.com/Sheffield-Accelerated-VoI/SAVI
+
+## Add package description here
