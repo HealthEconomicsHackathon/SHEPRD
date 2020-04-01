@@ -51,4 +51,3 @@ and it must be named either `_index.md` or `_index.Rmd`, respectively.
     `hugo serve`
 
 
-2020 version #commit test
