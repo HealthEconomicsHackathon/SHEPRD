@@ -21,6 +21,12 @@ Creators and current contributors are:
 By clicking on the various model subheadings, information about R packages and code available will be displayed.
 This is not exhaustive but covers some of the key packages and coding literature in relation to health economic evaluation models.
 
+This webpage is most useful for those who have some understanding or experience in R. If you are new to R, please first consult the starter mannual: Copyright (1999–2018) R Core Team, W. N. Venables, D. M. Smith and the R Core Team, "An Introduction to R. Notes on R: A Programming Environment for Data Analysis and Graphics Version 3.6.3 (2020-02-29)". Open Access: https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf 
+
+If there are any issues with the website or information presented in it, please contact Nichola Naylor - nichola.naylor@lshtm.ac.uk
+
+Related Github repository: https://github.com/HealthEconomicsHackathon/SHEPRD 
+
 <div id="tree"></div>
 
 
