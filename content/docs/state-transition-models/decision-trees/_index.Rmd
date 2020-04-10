@@ -112,7 +112,7 @@ The rpart function outputs an rpart.object
 
 ## Sample code 
 
-##Other helpful resources  
+## Other helpful resources  
 
 As this is a popular package there is lots of online support, for example:  
 

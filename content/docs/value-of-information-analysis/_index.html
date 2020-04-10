@@ -368,14 +368,61 @@ summary {
 
 <div id="introduction" class="section level2">
 <h2>Introduction</h2>
-<p>VOI is a quantitative, systematic method to assess decision uncertainty and evaluate existing evidence to determine if new technology/interventions will provide a return on investment. See also: <a href="https://www.ispor.org/heor-resources/good-practices-for-outcomes-research/article/value-of-information-analysis-for-research-decisions-an-introduction" class="uri">https://www.ispor.org/heor-resources/good-practices-for-outcomes-research/article/value-of-information-analysis-for-research-decisions-an-introduction</a></p>
+<p>Value of information (VOI) analysis measures the value of reducing uncertainty in a cost-effectiveness or decision analysis. VOI can be used to inform decision making, design better research studies, prioritise research more efficiently and quantify uncertainty .VOI can be utilised to prioritise and allocate research funding better using costs and benefits. It is gaining increasing recognition for its utility. The costs and benefits of an intervention are weighed up alongside the value of information to reduce uncertainty. By studying the benefits and costs of each new proposed intervention and the value of information to reduce uncertainty it becomes possible to identify topics where further research offers the greatest value. Research funders can then rank topics in order of value to determine areas of high priority.</p>
+<p>See also: <a href="https://www.ispor.org/heor-resources/good-practices-for-outcomes-research/article/value-of-information-analysis-for-research-decisions-an-introduction" class="uri">https://www.ispor.org/heor-resources/good-practices-for-outcomes-research/article/value-of-information-analysis-for-research-decisions-an-introduction</a></p>
 </div>
 <div id="when-might-i-use-this" class="section level2">
 <h2>When might I use this?</h2>
-<p>VOI can be used in several scenarios and is becoming an increasingly utilised tool. Eg. Funders examining a range of projects can rank the return expected from each and make funding choices from this Eg. As an alternative to traditional methods such as power calculations to determine study sample size Eg. Perform an economic evaluation of the next steps in a project. RANE - Rapid Assessment of Need for Evidence RANE is a tool which can be used to estimate the value of research proposals. Webpage: <a href="https://shiny.york.ac.uk/rane/" class="uri">https://shiny.york.ac.uk/rane/</a> GitHub: <a href="https://github.com/david-glynn" class="uri">https://github.com/david-glynn</a> <a href="https://github.com/david-glynn/OpenVOIdemo.v.0.1" class="uri">https://github.com/david-glynn/OpenVOIdemo.v.0.1</a> SAVI - Sheffield Accelerated Value of Information SAVI can be used to evaluate uncertainty in a standardised manner (C-E (cost-effectiveness)planes, cost-effectiveness acceptability curves (CEACs), as well as assess the expected value of perfect information (EVPI) and expected value of perfect parameter information (EVPPI) Webpage: <a href="http://savi.shef.ac.uk/SAVI/" class="uri">http://savi.shef.ac.uk/SAVI/</a> GitHub: <a href="https://github.com/Sheffield-Accelerated-VoI/SAVI" class="uri">https://github.com/Sheffield-Accelerated-VoI/SAVI</a></p>
+<p>VOI can be used in several scenarios and is becoming an increasingly utilised tool. Eg. Funders examining a range of projects can rank the return expected from each and make funding choices from this Eg. As an alternative to traditional methods such as power calculations to determine study sample size Eg. Perform an economic evaluation of the next steps in a project.</p>
 </div>
-<div id="add-package-description-here" class="section level2">
-<h2>Add package description here</h2>
+<div id="voi-packages" class="section level1">
+<h1>VOI Packages</h1>
+<div id="package" class="section level2">
+<h2>Package:</h2>
+<p>SAVI (Sheffield Accelerated Value of Information)</p>
+<p>Available from CRAN (<a href="https://www.sheffield.ac.uk/polopoly_fs/1.528134!/file/Instructions_for_installing_the_SAVI_R_package.pdf" class="uri">https://www.sheffield.ac.uk/polopoly_fs/1.528134!/file/Instructions_for_installing_the_SAVI_R_package.pdf</a>) OR as an Rshiny server application (<a href="http://savi.shef.ac.uk/SAVI/" class="uri">http://savi.shef.ac.uk/SAVI/</a>)</p>
+<div id="maintained-by" class="section level3">
+<h3>Maintained by:</h3>
+<p>Mark Strong (<a href="mailto:savi@sheffield.ac.uk" class="email">savi@sheffield.ac.uk</a>)</p>
+</div>
+</div>
+<div id="what-does-this-package-do" class="section level2">
+<h2>What does this package do?</h2>
+<p>This package can be used for : Standardised assessment of uncertainty (C-E planes and CEACs) Overall EVPI (Expected Value of Perfect Information) per patient, per jurisdiction per year and over your decision relevance horizon Expected Value of Perfect Parameter Information (EVPPI) for single and groups of parameters Also more recently they have added ability to perform risk analysis.</p>
+</div>
+<div id="how-do-i-input-my-data-to-itwhat-inputs-does-it-take" class="section level2">
+<h2>How do I input my data to it/what inputs does it take?</h2>
+<p>Rshiny application designed for only inputting PSA (probabilistic sensitivity analysis) outputs. Data can be input onto the Rshiny application as a .csv file. Either tab,comma, space or semicolon separated. On this application separate .csvs for parameters, costs and effects. There are also test data files on their website and github which you can practice with (<a href="https://github.com/Sheffield-Accelerated-VoI/SAVI/tree/master/test_data" class="uri">https://github.com/Sheffield-Accelerated-VoI/SAVI/tree/master/test_data</a>). Also requires you to fill in model parameter specifics eg. effectiveness and cost measures used</p>
+</div>
+<div id="what-outputs-do-i-get" class="section level2">
+<h2>What outputs do I get?</h2>
+<p>Generates tabular output of and overall expected value of perfect information (EVPI), a partial EVPI for each parameter</p>
+</div>
+<div id="package-1" class="section level2">
+<h2>Package:</h2>
+<p>RANE (Rapid Assessment of Need for Evidence) Available as an Rshiny server application (<a href="https://shiny.york.ac.uk/rane/" class="uri">https://shiny.york.ac.uk/rane/</a>).</p>
+<p>No CRAN page available</p>
+</div>
+<div id="maintained-by-1" class="section level2">
+<h2>Maintained by:</h2>
+<p>David Glynn (<a href="https://github.com/david-glynn" class="uri">https://github.com/david-glynn</a>)</p>
+</div>
+<div id="what-does-this-package-do-1" class="section level2">
+<h2>What does this package do?</h2>
+<p>Since this is an Rshiny application it provides an easy input page to: 1)Determining intervention with highest expected health benefit (and expected outcomes for each intervention) 2) Ascertain the value of a change in practice based on current evidence</p>
+</div>
+<div id="how-do-i-input-my-data-to-itwhat-inputs-does-it-take-1" class="section level2">
+<h2>How do I input my data to it/what inputs does it take?</h2>
+<p>Does not appear to require user to input own files and instead requires you to fill information into boxes/drop downs on intervention options such as baseline vs intervention, uptake, minimum clinical difference required, measurements used for endpoint, and the way the operater wants results reported.</p>
+</div>
+<div id="what-outputs-do-i-get-1" class="section level2">
+<h2>What outputs do I get?</h2>
+<p>Output is in easy read format for user and and provides text on the treatment with expected highest benefit, displays expected outcomes for each treatment and the consequences of uncertainty.</p>
+</div>
+<div id="other-packages-to-explore-but-not-detailed-here" class="section level2">
+<h2>Other packages to explore but not detailed here:</h2>
+<p>The BCEA package (<a href="https://cran.r-project.org/web/packages/BCEA/BCEA.pdf" class="uri">https://cran.r-project.org/web/packages/BCEA/BCEA.pdf</a>) also is reportedly able to calculate VOI through removing lineard dependents in the ‘CreateInputs’ function. We could not find further information or sample code with this. See Probabilistic Sensitivty Analysis section of SHEPRD for more information on BCEA.</p>
+</div>
 </div>
 
 

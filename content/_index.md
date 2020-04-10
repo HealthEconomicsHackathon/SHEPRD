@@ -63,26 +63,19 @@ Microsimulation
 
 ## Who we are
 
-Dr. Nichola R. Naylor - Nichola is a health economist currently funded through a collaboration between the London School of Hygiene & Tropical Medicine and the International Livestock Research Institute called ‘Agriculture for Nutrition and Health’, funded by the Consultative Group on International Agricultural Research. 
-Nichola led this project, sourced relevant information and wrote package summaries throughout the hackathon and update (2020) sessions. 
+Dr. Nichola R. Naylor - Nichola is a health economist currently funded through a collaboration between the London School of Hygiene & Tropical Medicine and the International Livestock Research Institute called ‘Agriculture for Nutrition and Health’, funded by the Consultative Group on International Agricultural Research. Nichola led this project, sourced relevant information and wrote package summaries throughout the hackathon and update (2020) sessions.
 
-Collette Taylor - Collette is a PhD student at the Royal Veterinary College, with the project co-sponsored by BBSRC and MSD in veterinary epidemiology and economics. 
-Collette sourced relevant information and wrote package summaries throughout the hackathon and update (2020) sessions. 
+Collette Taylor - Collette is a PhD student at the Royal Veterinary College in veterinary epidemiology and economics, with the project co-sponsored by BBSRC and MSD. Collette sourced relevant information and wrote package summaries throughout the hackathon and update (2020) sessions.
 
-Katherine Davis - Katherine is a PhD student at Imperial College London, with Wellcome Trust funding a four year PhD training programme in Epidemiology, Evolution and Control of Infectious Diseases. 
-Katherine sourced relevant information and wrote package summaries throughout the hackathon and update (2020) sessions. 
+Katherine Davis - Katherine is a PhD student at Imperial College London, studying on the Wellcome Trust Four Year programme in Epidemiology, Evolution and Control of Infectious Diseases. Katherine sourced relevant information and wrote package summaries throughout the hackathon and update (2020) sessions.
 
-Arthi Vasantharoopan  - Arthi is a PhD student in health economics at the London School of Hygiene and Tropical Medicine as part of The Bridging the GAP in HIV testing and care for Children in Zimbabwe (B-GAP), which is jointly funded by the UK Medical Research Council (MRC) and the UK Department for International Development (DFID). 
-Arthi sourced relevant information and wrote package summaries throughout the hackathon and update (2020) sessions. 
+Arthi Vasantharoopan - Arthi is a PhD student in health economics at the London School of Hygiene and Tropical Medicine as part of The Bridging the GAP in HIV testing and care for Children in Zimbabwe (B-GAP), which is jointly funded by the UK Medical Research Council (MRC) and the UK Department for International Development (DFID). Arthi sourced relevant information and wrote package summaries throughout the hackathon and update (2020) sessions.
 
-Dr. Rosita Koleva-Kolarova - Rosita works on a Horizon2020 funded project called HEcoPerMed (Health Economics for Personalised Medicine) at the Nuffield Department of Population Health, University of Oxford. 
-Rosita sourced relevant information and wrote package summaries throughout the hackathon.
+Dr. Rosita Koleva-Kolarova - Rosita works on a Horizon2020 funded project called HEcoPerMed (Health Economics for Personalised Medicine) at the Nuffield Department of Population Health, University of Oxford. Rosita sourced relevant information and wrote package summaries throughout the hackathon.
 
-Monique Tan - Monique is a PhD student working on the nutrition and international health within Action on Salt China, a project funded by the  National Institute for Health Research. 
-Monique sourced relevant information and wrote package summaries throughout the hackathon.
+Monique Tan - Monique is a PhD student working on the nutrition and international health within Action on Salt China, a project funded by the National Institute for Health Research. Monique sourced relevant information and wrote package summaries throughout the hackathon.
 
-Dr. Alex Hill - Alex is a professional software engineer employed by the MRC Centre for Outbreak Analysis and Modelling, at Imperial College London. 
-Alex set up the Github repository, organised the structure of the webpage code and set up (and updated) the SHEPRD webpage throughout the hackathon and update (2020) sessions. 
+Dr. Alex Hill - Alex is a professional software engineer employed by the MRC Centre for Outbreak Analysis and Modelling, at Imperial College London. Alex set up the Github repository, organised the structure of the webpage code and set up (and updated) the SHEPRD webpage throughout the hackathon and update (2020) sessions.
 
 
 <script src="https://d3js.org/d3.v5.min.js"></script>

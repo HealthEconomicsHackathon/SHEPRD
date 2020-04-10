@@ -20,5 +20,10 @@ DES models can also be used to compare situations of constrained resources.
 Some common uses of DES models are for more complex chronic diseases eg. diabetic patients and the multiple outcomes and complications. Constrained resource models might look at things such as hospital wait times and resource allocation.
 
 
-# Packages
-Descriptions to be added here
+# Other packages to explore but not detailed here:
+DES packages found (but not yet explored) include:
+
+* DES Package:  https://cran.r-project.org/web/packages/DES/index.html and https://cran.r-project.org/web/packages/DES/README.html
+
+* Simmer package: https://cran.r-project.org/web/packages/simmer/index.html and https://r-simmer.org/ 
+
