@@ -1,14 +1,13 @@
 ---
 title: "Probabilistic Sensitivity Analysis"
-author: "Katherine"
-date: "7 November 2019"
 output: html_document
 ---
-#Probabilistic sensitivity analysis  
+# Probabilistic sensitivity analysis Packages
 
-##Package: BCEA  
+## Package: 
+BCEA  
 
-###Maintained by  
+### Maintained by  
 Gianluca Baio <gianluca@stats.ucl.ac.uk>  
 
 Note information taken from these sources (Accessed 07/11/2019):  
@@ -17,12 +16,12 @@ Manual:https://cran.r-project.org/web/packages/BCEA/BCEA.pdf
 Authors: Gianluca Baio, Andrea Berardi, Anna Heath  
 Gian Luca’s website - http://www.statistica.it/gianluca/software/bcea/  
 
-##What does this package do?
+## What does this package do?
 This package is useful for running probabilistic sensitivity analysis (PSA). Note that this package does not produce or run a base-analysis model, it is useful for  post-processing the output (e.g. plotting PSA results.  
 
 Other functionality was not explored as part of this exercise.
   
-##How do I input my data to it/what inputs does it take?
+## How do I input my data to it/what inputs does it take?
 Taken from manual and example on page 11 [https://cran.r-project.org/web/packages/BCEA/BCEA.pdf]
 ```{bcea}
 bcea(e, c, ref = 1, interventions = NULL, Kmax = 50000, wtp = NULL, plot = FALSE)
@@ -59,9 +58,10 @@ c
 -      	   [2,] [PSA output2] [PSA output 2]  
 ```
 
-##What outputs do I get?
+## What outputs do I get?
 Taken from BCEA mannual - https://cran.r-project.org/web/packages/BCEA/BCEA.pdf
-The output is a bcea item which is an R object containing many values including 
+The output is a bcea item which is an R object containing many values including:
+
 N.sim - Number of simulations produced by the Bayesian model
 N.comparators - Number of interventions being analysed
 n.comparisons- Number of possible pairwise comparisons
@@ -83,14 +83,16 @@ ol- An array including the opportunity loss for each simulation from the Bayesia
 evi- The vector of values for the Expected Value of Information, as a function of the willingness to pay
 interventions- A vector of labels for all the interventions considered
 ref -The numeric index associated with the intervention used as reference in the analysis
-comp -The numeric index(es) associated with the intervention(s) used as comparator(s)
-in the analysis step The step used to form the grid approximation to the willingness to pay  
+comp -The numeric index(es) associated with the intervention(s) used as comparator(s) in the analysis step The step used to form the grid approximation to the willingness to pay  
 
-##Other packages 
+## Other packages 
 Not yet explored.
 Stated as a functionality of hesim and heemod in their package descriptions:
 https://cran.r-project.org/web/packages/heemod/heemod.pdf
+
+Vignette for heemod PSA: https://cran.r-project.org/web/packages/heemod/vignettes/e_probabilistic.html 
+
 https://cran.r-project.org/web/packages/hesim/hesim.pdf  
 
-##Other helpful resources
+## Other helpful resources
 A web-app interface of the R package - https://egon.stats.ucl.ac.uk/projects/BCEAweb/
