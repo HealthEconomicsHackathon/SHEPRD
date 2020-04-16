@@ -1,6 +1,7 @@
 ---
-title: Microsimulation Modelling Packages Available on CRAN
-output: html_document
+bookCollapseSection: true
+weight: 20
+title: Microsimulation
 ---
 
 # Microsimulation Modelling Packages

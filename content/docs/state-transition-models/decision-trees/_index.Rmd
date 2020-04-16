@@ -1,8 +1,8 @@
 
 ---
-title: "Decision Trees"
-bookCollapseSection: yes
+bookCollapseSection: true
 weight: 20
+title: Decision Trees
 ---
 
 # DECISION TREE PACKAGES
