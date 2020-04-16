@@ -1,5 +1,7 @@
 # SHEPRD
 
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip) [![Netlify Status](https://api.netlify.com/api/v1/badges/92f3efe9-8473-4ebd-a29d-bb9fbb93f8dc/deploy-status)](https://app.netlify.com/sites/hermes-sheprd/deploys)
+
 ## Contributing
 
 ### Installation
