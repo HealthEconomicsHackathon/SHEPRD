@@ -7,6 +7,8 @@ bookToc: false
 
 # Signposting Health Economic Packages in R for Decision Modelling (SHEPRD)
 
+<div id="tree"></div>
+
 This webpage aims to help you navigate you through the forest of R packages that can be used in health economics and signpost you to the most appropriate one, given your intended health economic analysis. 
 
 This decision tree-style compendium was created over 2 days as part of a R Hackathon (6th - 7th November 2019), with work continued until 2020. The R Hackathon was organised by Dr. Nathan Green & Imperial College London (https://n8thangreen.wixsite.com/hermes-hack-london)
@@ -26,8 +28,6 @@ This webpage is most useful for those who have some understanding or experience 
 If there are any issues with the website or information presented in it, please contact Nichola Naylor - nichola.naylor@lshtm.ac.uk
 
 Related Github repository: https://github.com/HealthEconomicsHackathon/SHEPRD 
-
-<div id="tree"></div>
 
 
 ### Other work compiling packages that were used/viewed or could be useful in the future are:
