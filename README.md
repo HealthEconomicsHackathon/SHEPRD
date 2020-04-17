@@ -40,7 +40,7 @@ All `_index.md` and `_index.Rmd` files should adhere to the templates provided i
 [templates](https://github.com/HealthEconomicsHackathon/SHEPRD/tree/master/templates) folder.
 
 **Important: if using an .Rmd file please knit it locally and commit both the .Rmd, the compiled .md and any 
-generated assets** 
+generated files which should appear in the ./static folder** 
 
 ### Viewing changes locally
 

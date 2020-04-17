@@ -2,6 +2,17 @@
 output: md_document
 ---
 
+```{r include = FALSE}
+## important: this ensures that generated images are in the right location for Hugo
+blog_dir <- strsplit(getwd(), "content")[[1]][1]
+base_dir <- paste0(blog_dir, "static")
+base_url <- "/"
+fig_path <- "images/"
+
+knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
+knitr::opts_chunk$set(fig.path = fig_path)
+```
+
 # Page Title
 
 ## Introduction
