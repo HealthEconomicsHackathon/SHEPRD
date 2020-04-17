@@ -4,19 +4,27 @@
 
 ## Contributing
 
-### Installation
+Contributions of various forms are welcome:
+
+* a correction to an existing package or model description
+* a new type of model that isn't already documented or a sub-type of an existing section
+* a new package that isn't already mentioned
+* full details of any of the packages mentioned in the "Other packages to explore but not detailed here" sections
+
+### How to contribute
+#### Installation
 
 1. Fork this repo
 1. Install [hugo](https://gohugo.io/getting-started/installing/)
 
-### Workflow
+#### Workflow
 1. Add or update content (see below for details on content templates.)
 1. Open a pull request from your fork into master of this repo. Netlify will run some 
 automated checks on your pull request and allow you to see a deploy preview with the changes.
 1. If you are fixing an existing issue, in the pull request description please link the issue using 
 keyword in the pull request description so that it will be automatically updated; see https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword
 
-### Adding or updating content
+#### Adding or updating content
 
 All model and package documentation lives in the `content/docs` directory. This directory has a tree structure, 
 e.g.
@@ -42,7 +50,7 @@ All `_index.md` and `_index.Rmd` files should adhere to the templates provided i
 **Important: if using an .Rmd file please knit it locally and commit both the .Rmd, the compiled .md and any 
 generated files which should appear in the ./static folder** 
 
-### Viewing changes locally
+#### Viewing changes locally
 
 1. if using RMarkdown, knit any new .Rmd files to .md files first
      
