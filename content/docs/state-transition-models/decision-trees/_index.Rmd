@@ -11,16 +11,16 @@ fig_path <- "images/"
 knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
 knitr::opts_chunk$set(fig.path = fig_path)
 ```
+
 # Decision Trees
 
 Note for cohort state transition decision tree models, whereby input parameter values are stated to compute expected values, it is worth first referring to the Markov models section where the code and packages described can be used and simpified for the decision tree case, as stated in a heemod package vignette: https://cran.r-project.org/web/packages/heemod/vignettes/a_introduction.html
 
 Many of the packages detailed below are focused on creating data tree structures.
 
-## Package:
-data.tree
+## Package: data.tree
 
-### Maintained by: 
+### Maintained by
 Christoph Glur (christoph.glur@ipub.com)
 (https://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html#introduction and https://cran.r-project.org/web/packages/data.tree/data.tree.pdf ) 
 
@@ -51,16 +51,15 @@ GNI2014$pathString <- paste("world", GNI2014$continent, GNI2014$country, sep = "
 tree <- as.Node(GNI2014[,])
 print(tree, pruneMethod = "dist", limit = 20)
 ```
-#### (code example is from Christopher Glur's https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html#jenny-lind-decision-tree-plotting)
+(code example is from Christopher Glur's https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html#jenny-lind-decision-tree-plotting)
 
 ## Other helpful resources
 
 This site has a range of examples of potential uses for the data.tree package ranging from financial applications to a genetic mutation algorithm (https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html) 
 
-## Package: 
-party 
+## Package: party
 
-### maintained by:
+### Maintained by
 Torsten Hothorn (Torsten.Hothorn@R-project.org)  
 
 (https://cran.r-project.org/web/packages/party/index.html)  
@@ -74,14 +73,13 @@ To learn more about what the function can do, check out the two comprehensive vi
 ## How do I input my data to it/what inputs does it take?
 The input for mob is a dataframe.    
 
-
 ## What outputs do I get?
 The output of mob is an object of class mob.  
 
 ## Sample code 
 
 ## Other packages 
-###(not discussed in full)
+(not discussed in full)
 Party was updated in 2015 to the package Partykit, this includes a reimplementation of ctree() and an extended reimplementation of mob(), as well as a variety of other features (https://cran.r-project.org/web/packages/partykit/index.html and http://partykit.r-forge.r-project.org/partykit/).
 
 ## Other helpful resources
@@ -92,10 +90,9 @@ There’s also a variety of online support available, for example:
 - http://www.sthda.com/english/articles/35-statistical-machine-learning-essentials/141-cart-model-decision-tree-essentials/#loading-required-r-packages 
 
 
-## Package: 
-rpart
+## Package: rpart
 
-### maintained by: 
+### Maintained by
 Beth Atkinson (atkinson@mayo.edu)  
 
 (https://cran.r-project.org/web/packages/rpart/index.html))
@@ -129,7 +126,7 @@ As this is a popular package there is lots of online support, for example:
 
 
 
-## Other packages to explore but not detailed here:
+## Other packages to explore but not detailed here
 
 ### Make decision trees or networks   
 

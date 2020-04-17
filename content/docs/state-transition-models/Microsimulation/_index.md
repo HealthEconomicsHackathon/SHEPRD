@@ -1,3 +1,7 @@
+---
+output: md_document
+---
+
 # Microsimulation Modelling
 
 Packages Available on CRAN
@@ -5,11 +9,11 @@ Packages Available on CRAN
 ## Package: gems
 Generalized Multistate Simulation Model
  
-### Maintained By: 
+### Maintained By
 Luisa Salazar Vizcaya <luisapaola.salazarvizcaya at insel.ch>
 Reference Manual on CRAN – https://cran.r-project.org/web/packages/gems/gems.pdf
  
-### Description: 
+### Description
 *  Simulate and analyze models with general hazard functions.
 *  Multistate model is not required to be a Markov model
 *  However, the package only considers multistate models without loops. I.e. Models which can be written as directed acyclic graphs.
@@ -21,7 +25,7 @@ Reference Manual on CRAN – https://cran.r-project.org/web/packages/gems/gems.p
 *  3 classes to encode all model inputs and outputs
 *  6 main functions; 3 to specify the model, 1 for simulation; 2 to summarize results
  
-### Inputs/Outputs/Sample Code: 
+### Inputs/Outputs/Sample Code
 (extracted verbatim from the Vignette) 
 *Load Package*:
 install.packages("gems")
@@ -45,7 +49,7 @@ simulateCohort simulates the specified artificial cohort and returns an object o
  
 `cumulativeIncidence` returns an object of class posteriorProbabilities that contains the cumulative incidence over time.
  
-### Additional Resources:
+### Additional Resources
 * Vignette –  https://rdrr.io/cran/gems/f/inst/doc/gems.pdf
 Blaser N, Vizcaya LS, Estill J, et al. gems: An R Package for Simulating from Disease Progression Models. J Stat Softw 2015; 64(10): 1-22
  
@@ -56,11 +60,11 @@ Krijkam EM, Alarid* Escudero F, Enns EA, et al. Microsimulation Modeling for Hea
 ## Package: MicSim 
 Performing Continuous* Time Microsimulation
  
-### Maintained By: 
+### Maintained By
 Sabine Zinn < szinn at diw.de>
 Reference Manual on CRAN – https://cran.r-project.org/web/packages/MicSim/MicSim.pdf
  
-### Description: 
+### Description
 Perform continuous* time microsimulation for a wide range of demographic applications. (Individual life* courses are specified by a continuous* time multi* state model).
 *  Package uses non* homogeneous continuous* time Markov chains to describe individual life* courses.
  
@@ -81,7 +85,7 @@ micSimParallel is a parallelized version of the function micSim. That is, it run
  
 setSimHorizon sets the simulation horizon of the microsimulation. The actual microsimulation is performed by micSim (sequentially) or by micSimParallel (parallel computing).
  
-### Additional Resources:
+### Additional Resources
 * Vignette not available on CRAN
 *   MicSim Package Toolkit
 Zinn, Sabine. (2014). The MicSim Package of R: An Entry* Level Toolkit for Continuous* Time Microsimulation. International Journal of Microsimulation. 7(3): 3* 32.
@@ -92,11 +96,11 @@ Krijkam EM, Alarid* Escudero F, Enns EA, et al. (2018). Microsimulation Modeling
 # Package: MILC
 Microsimulation Lung Cancer (MILC) model
  
-### Maintained By: 
+### Maintained By
 Stavroula A. Chrysanthopoulou <Stavroula_Chrysanthopoulou@brown.edu>
 Reference Manual on CRAN – https://cran.r-project.org/web/packages/MILC/MILC.pdf
  
-### Description: 
+### Description
 Predict individual trajectories using the continuous time microsimulation model MILC, that describes the natural history of lung cancer.
 *    	Dynamic, continuous time microsimulation model that describes the natural history of lung cancer in the absence of any screening or treatment components.
 *    	Model accounts for age, gender, and smoking history, including smoking status, start and quit smoking ages, and average number of cigarettes smoked per day when relevant.
@@ -135,7 +139,7 @@ t_mal predicts the age at the onset of the first malignant given gender and smok
 t_prog simulates the time points (years) from the onset of the first malignant cell to major states in the natural history of lung cancer, i.e., the time at the beginning of the regional (Treg), and distant (Tdist) stage, and time at diagnosis (Tdiagn).
 t_vol predicts the time (years) at which tumor has reached volume V from the onset of the first malignant cell.
   
-### Additional Resources:
+### Additional Resources
 * Vignette not available on CRAN
 * Microsimulation Modelling Tutorial in R
 Krijkam EM, Alarid* Escudero F, Enns EA, et al. (2018). Microsimulation Modeling for Health Decision Sciences Using R: A Tutorial. Medical Decision Making 2018; 38(3): 400* 422
@@ -145,7 +149,7 @@ Krijkam EM, Alarid* Escudero F, Enns EA, et al. (2018). Microsimulation Modeling
 ## Package: hesim 
 Health Economic Simulation Modeling and Decision Analysis 
 
-### Maintained By: 
+### Maintained By
 Devin Incerti <devin.incerti@gmail.com>
 Description: Parametrize, simulate, and analyze health* economic simulation models.
 
@@ -207,7 +211,7 @@ After doing this you end up with the following data.table input (taken vignette 
  
 ```
 
-## What outputs do I get?:
+#What outputs do I get?
 
 ```{r} 
 # An object with (non* exclusively) :
@@ -219,7 +223,7 @@ After doing this you end up with the following data.table input (taken vignette 
 
 ```
 
-#### Sample code section:
+#### Sample code
 See above & 
 Vignette =  https://cran.r-project.org/web/packages/hesim/vignettes/intro.html
  
@@ -232,14 +236,14 @@ Additional Resources:
  Krijkam EM, Alarid* Escudero F, Enns EA, et al. (2018). Microsimulation Modeling for Health Decision Sciences Using R: A Tutorial. Medical Decision Making 2018; 38(3): 400* 422
 
 
-# Additional Microsimulation Packages Found Online (GitHub): 
+# Additional Microsimulation Packages Found Online (GitHub)
  
-##Package: simario  
+## Package: simario
  
 Developed By: COMPASS Research Centre, Faculty of Arts, University of Auckland
 Found Here: https://github.com/compassresearchcentre/simario
  
-### Description: 
+### Description
 Provide a flexible framework of functions for creating a discrete* time dynamic microsimulation
  
 Inputs/ Outputs/ Sample Code:
@@ -254,21 +258,20 @@ as.package("simario")
 check("simario")
 has_devel()
  
-### For further examples of code see:
+### For further examples of code see
 https://github.com/compassresearchcentre/simario/blob/master/simario%20scrap.r
  
  
-### Additional Resources:
+### Additional Resources
 Slide Deck from COMPASS detailing the package: https://cdn.auckland.ac.nz/assets/auckland/arts/our* research/research* institutes* centres* groups/compass/microsimulation/simario* r* for* dynamic* microsimulation.pdf
- 
- 
+
  
 ## Package: microsimulation
  
 Developed By: mclements
 Found Here: https://github.com/mclements/microsimulation
  
-### Description: 
+### Description
 Provides several approaches for microsimulation and event-based, discrete event simulation
  
 Inputs/ Outputs/ Sample Code:
@@ -283,7 +286,7 @@ For further examples of code see: ‘Simple Examples’
 https://github.com/mclements/microsimulation
 
 
-## Spatial Microsimulation Packages Available on CRAN:
+## Spatial Microsimulation Packages Available on CRAN
 
 ## rakeR: Easy Spatial Microsimulation (Raking) in R
 *    	Description: Functions for performing spatial microsimulation (‘raking’)
@@ -309,7 +312,7 @@ o   Functionality for data* extensibility of micro* datasets.
 
 
 
-## Additional Simulation Packages Reviewed:
+## Additional Simulation Packages Reviewed
  
 ## genSurv: ‘Generating Multi-State Survival Data’
 *    	Description: Generates data with one binary time* dependent covariate and data stemming from a progressive illness* death model.

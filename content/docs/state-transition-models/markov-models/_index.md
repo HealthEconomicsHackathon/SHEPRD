@@ -54,10 +54,9 @@ https://cran.r-project.org/web/packages/heemod/index.html
 
 
 
-## Package: 
-heemod  
+## Package: heemod  
 
-### maintained by: 
+### Maintained by
 Kevin Zarca <kevin.zarca@gmail.com>
 ( https://cran.r-project.org/web/packages/heemod/heemod.pdf and https://cran.r-project.org/web/packages/heemod/index.html)  
 
@@ -106,7 +105,7 @@ https://cran.r-project.org/web/packages/heemod/vignettes/a_introduction.html
 - Markov Models for Health Economic Evaluations: The R Package heemod Antoine Filipovi´c-Pierucci, Kevin Zarca and Isabelle Durand-Zaleski (2017). (https://arxiv.org/pdf/1702.03252.pdf )
 
 
-## Other packages:
+## Other packages
 - DARTH : 
 The packages include:
    -Darthpack (https://darth-git.github.io/darthpack/) 
