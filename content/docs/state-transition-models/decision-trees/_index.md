@@ -1,0 +1,277 @@
+Decision Trees
+==============
+
+Note for cohort state transition decision tree models, whereby input
+parameter values are stated to compute expected values, it is worth
+first referring to the Markov models section where the code and packages
+described can be used and simpified for the decision tree case, as
+stated in a heemod package vignette:
+<https://cran.r-project.org/web/packages/heemod/vignettes/a_introduction.html>
+
+Many of the packages detailed below are focused on creating data tree
+structures.
+
+Package:
+--------
+
+data.tree
+
+### Maintained by:
+
+Christoph Glur (<christoph.glur@ipub.com>)
+(<https://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html#introduction>
+and <https://cran.r-project.org/web/packages/data.tree/data.tree.pdf> )
+
+What does this package do?
+--------------------------
+
+This package is used to create hierarchical structures through data.tree
+structures.
+
+How do I input my data to it/what inputs does it take?
+------------------------------------------------------
+
+This package accepts inputs in a range of formats. Inputs can be from
+other tree packages (e.g. dendrogram, phylo from ape package and igraph
+trees). Additionally, data.frames can be used or the trees can be built
+programatically within the data.tree package. Data.tree can also use
+data saved in csv, yaml, json formats.
+
+What outputs do I get?
+----------------------
+
+The package produces a tree that you can navigate (‘climb’) and
+manipulate (e.g. ‘prune’ or ‘filter’) within R. data.tree can plot trees
+within its own package but can also use other packages to allow for
+styling of the tree. Other packages might be igraph, treeview, ape. Data
+from the data.tree can be saved as a data.tree type or as a data.frame
+and exported as csv, yaml, json
+
+Sample code
+-----------
+
+    library(treemap)
+    data(GNI2014)
+    treemap(GNI2014,
+           index=c("continent", "iso3"),
+           vSize="population",
+           vColor="GNI",
+           type="value") 
+
+![](/images/unnamed-chunk-2-1.png)
+
+    library(data.tree)
+    GNI2014$continent <- as.character(GNI2014$continent)
+    GNI2014$pathString <- paste("world", GNI2014$continent, GNI2014$country, sep = "/")
+    tree <- as.Node(GNI2014[,])
+    print(tree, pruneMethod = "dist", limit = 20)
+
+    ##                        levelName
+    ## 1  world                        
+    ## 2   ¦--North America            
+    ## 3   ¦   ¦--Bermuda              
+    ## 4   ¦   ¦--United States        
+    ## 5   ¦   °--... 22 nodes w/ 0 sub
+    ## 6   ¦--Europe                   
+    ## 7   ¦   ¦--Norway               
+    ## 8   ¦   ¦--Switzerland          
+    ## 9   ¦   °--... 39 nodes w/ 0 sub
+    ## 10  ¦--Asia                     
+    ## 11  ¦   ¦--Qatar                
+    ## 12  ¦   ¦--Macao SAR, China     
+    ## 13  ¦   °--... 45 nodes w/ 0 sub
+    ## 14  ¦--Oceania                  
+    ## 15  ¦   ¦--Australia            
+    ## 16  ¦   ¦--New Zealand          
+    ## 17  ¦   °--... 11 nodes w/ 0 sub
+    ## 18  ¦--South America            
+    ## 19  ¦   ¦--Uruguay              
+    ## 20  ¦   ¦--Chile                
+    ## 21  ¦   °--... 10 nodes w/ 0 sub
+    ## 22  ¦--Seven seas (open ocean)  
+    ## 23  ¦   ¦--Seychelles           
+    ## 24  ¦   ¦--Mauritius            
+    ## 25  ¦   °--... 1 nodes w/ 0 sub 
+    ## 26  °--Africa                   
+    ## 27      °--... 48 nodes w/ 0 sub
+
+#### (code example is from Christopher Glur's <https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html#jenny-lind-decision-tree-plotting>)
+
+Other helpful resources
+-----------------------
+
+This site has a range of examples of potential uses for the data.tree
+package ranging from financial applications to a genetic mutation
+algorithm
+(<https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html>)
+
+Package:
+--------
+
+party
+
+### maintained by:
+
+Torsten Hothorn (<Torsten.Hothorn@R-project.org>)
+
+(<https://cran.r-project.org/web/packages/party/index.html>)
+
+What does this package do?
+--------------------------
+
+The core of the Party package is ctree(). Ctree() can be employed to
+build conditional inference trees. These trees use conditional inference
+procedures within their tree-structured regression models. Trees can be
+produced for nominal, ordinal, numeric and censored data, as well as
+multivariate response variables, and covariates with arbitrary
+measurement scales.
+
+There is also a function called cforest(), which provides an
+implementation of Breiman's random forests, based on conditional
+inference trees. In addition, the function mob() uses parametric models
+(e.g. linear models, GLMs or survival regression) with parameter
+instability tests for split selection. Finally, there are useful
+functions for visualizing trees. To learn more about what the function
+can do, check out the two comprehensive vignettes.
+
+How do I input my data to it/what inputs does it take?
+------------------------------------------------------
+
+The input for mob is a dataframe.
+
+What outputs do I get?
+----------------------
+
+The output of mob is an object of class mob.
+
+Sample code
+-----------
+
+Other packages
+--------------
+
+### (not discussed in full)
+
+Party was updated in 2015 to the package Partykit, this includes a
+reimplementation of ctree() and an extended reimplementation of mob(),
+as well as a variety of other features
+(<https://cran.r-project.org/web/packages/partykit/index.html> and
+<http://partykit.r-forge.r-project.org/partykit/>).
+
+Other helpful resources
+-----------------------
+
+Find out more about party at <http://party.r-forge.r-project.org/>.  
+There’s also a variety of online support available, for example: -
+<https://rpubs.com/njvijay/14899> -
+<https://www.tutorialspoint.com/r/r_decision_tree.htm> -
+<http://www.sthda.com/english/articles/35-statistical-machine-learning-essentials/141-cart-model-decision-tree-essentials/#loading-required-r-packages>
+
+Package:
+--------
+
+rpart
+
+### maintained by:
+
+Beth Atkinson (<atkinson@mayo.edu>)
+
+(<https://cran.r-project.org/web/packages/rpart/index.html>))
+
+What does this package do?
+--------------------------
+
+This package performs recursive partitioning for classification,
+regression and survival trees. It implements the functionality in the
+1984 book by Breiman, Friedman, Olshen and Stone, Classification and
+Regression Trees. The package also includes several example sets of data
+with a long, but clear, vignette.
+
+**Rpart or party?**
+
+Rpart produces classification and regression trees with
+cross-validation-based cost-complexity pruning. By contrast, Party
+produces conditional inference trees based on unbiased recursive
+partitioning achieved via permutation tests. As a result, RPart is
+sometimes seen as easier to explain and use for beginners, but Party
+appears to give greater accuracy and performance.
+
+How do I input my data to it/what inputs does it take?
+------------------------------------------------------
+
+The input for rpart function in the package is a dataframe or formula.
+
+What outputs do I get?
+----------------------
+
+The rpart function outputs an rpart.object
+
+Sample code
+-----------
+
+Other helpful resources
+-----------------------
+
+As this is a popular package there is lots of online support, for
+example:
+
+-   <https://eight2late.wordpress.com/2016/02/16/a-gentle-introduction-to-decision-trees-using-r/>
+-   <https://www.r-bloggers.com/classification-trees-using-the-rpart-function/>
+-   <https://www.gormanalysis.com/blog/decision-trees-in-r-using-rpart/>
+-   <https://freakonometrics.hypotheses.org/tag/rpart>
+
+Other packages to explore but not detailed here:
+------------------------------------------------
+
+### Make decision trees or networks
+
+-   Package: igraph maintained by Gábor Csárdi <csardi.gabor@gmail.com>
+    (<https://cran.r-project.org/web/packages/igraph/igraph.pdf>)
+
+-   Package: tree maintained by Brian Ripley <ripley@stats.ox.ac.uk>
+    (<https://cran.r-project.org/web/packages/tree/index.html>)
+
+-   Package: RWeka maintained by Kurt Hornik <Kurt.Hornik@R-project.org>
+    (<https://cran.r-project.org/web/packages/RWeka/index.html>)
+
+-   Package: dtree maintained by Ross Jacobucci <rcjacobuc@gmail.com>
+    (<https://cran.r-project.org/web/packages/dtree/index.html>)
+
+-   Package: evtree maintained by Thomas Grubinger
+    <ThomasGrubinger@gmail.com>
+    (<https://cran.r-project.org/web/packages/evtree/>)
+
+-   Package: FFtrees maintained by Nathaniel Phillips
+    <Nathaniel.D.Phillips.is@gmail.com>
+    (<https://cran.rstudio.com/web/packages/FFTrees/index.html>)
+
+-   Package: C50 maintained by Max Kuhn <mxkuhn@gmail.com>
+    (<https://cran.r-project.org/web/packages/C50/index.html>)
+
+-   Package: cat.dt maintained by Javier Rodriguez-Cuadrado
+    <javierro@est-econ.uc3m.es>
+    (<https://cran.r-project.org/web/packages/cat.dt/index.html>)
+
+-   Package: MplusTrees maintained by Safaraz serang
+    <sarfaraz.serang@usu.edu>  
+    (<https://cran.r-project.org/web/packages/MplusTrees/index.html>)
+
+### Improving presentation of hierarchical clustering, and classification and regression trees
+
+-   Package: maptree maintained by Robert B. Gramacy
+    <rbgramacy@chicagobooth.edu>  
+    (<https://cran.r-project.org/web/packages/maptree/maptree.pdf>)
+
+### Convert JSON objects to R
+
+-   Package: jsonlite maintained by Jeroen Ooms <jeroen@berkeley.edu>
+    (<https://cran.r-project.org/web/packages/jsonlite/index.html>)
+
+-   Package: rjson maintained by Alex Couture-Beil <rjson_pkg@mofo.ca>
+    (<https://cran.r-project.org/web/packages/rjson/rjson.pdf>)
+
+### Validate JSON objects
+
+-   Package: jsonvalidate maintained by Rich FitzJohn
+    <rich.fitzjohn@gmail.com>
+    (<https://cran.r-project.org/web/packages/jsonvalidate/jsonvalidate.pdf>)

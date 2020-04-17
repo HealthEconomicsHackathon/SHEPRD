@@ -1,8 +1,8 @@
 ---
 title: Introduction
 type: docs
-scripts: [tree]
 bookToc: false
+scripts: [tree]
 ---
 
 # Signposting Health Economic Packages in R for Decision Modelling (SHEPRD)

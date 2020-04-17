@@ -1,10 +1,8 @@
 ---
-bookCollapseSection: true
-title: Discrete Event Simulation
-output: html_document
+output: md_document
 ---
 
-# Discrete Event Simulaltion
+# Discrete Event Simulation
 
 ## Introduction
 

@@ -1,9 +1,4 @@
----
-bookCollapseSection: true
-title: Parameter Uncertainty and Sensitivty Analysis
-output: html_document
----
-# Sensitivty Analysis 
+# Parameter Uncertainty and Sensitivity Analysis
 
 ## Introduction
 Models are used to inform decision making and resource allocation in health care, therefore, it is important that they report point estimates for specific outcomes as well as the uncertainty surrounding these outcomes. Modellers can perform sensitivity analyses (deterministic or probabilistic) to report on the uncertainty of their models’ outcomes, or value of information analysis to assess the expected gain from reducing uncertainty through some form of data collection exercise (trial, epidemiological study, etc.). 

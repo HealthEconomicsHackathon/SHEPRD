@@ -12,16 +12,11 @@
     1. or with https: `git clone https://github.com/HealthEconomicsHackathon/signpost.git`
     
 1. install [hugo](https://gohugo.io/getting-started/installing/)
-1. install blogdown from R:
-
-    `install.packages("blogdown")`
 
 ### Workflow
 1. create a new branch
     `git checkout -b my_new_branch`
 1. add or update documentation (see below for details)
-1. compile code locally from R with 
-    `blogdown::build_site()`
 1. commit and push your changes to git
 1. open a pull request from your branch into master 
 
@@ -44,9 +39,7 @@ and it must be named either `_index.md` or `_index.Rmd`, respectively.
 
 ### Viewing changes locally
 
-1. if using RMarkdown, compile by running from R:
-
-    `blogdown::build_site()`
+1. if using RMarkdown, knit any new .Rmd files to .md files
     
 1. serve the site locally by running from bash:
 

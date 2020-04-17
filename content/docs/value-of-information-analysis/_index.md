@@ -1,7 +1,4 @@
----
-title: Value of Information Analysis
-output: html_document
----
+# Value of Information Analysis
 
 ## Introduction
 Value of information (VOI) analysis measures the value of reducing uncertainty in a cost-effectiveness or decision analysis.  VOI can be used to inform decision making, design better research studies, prioritise research more efficiently and quantify uncertainty .VOI  can be utilised to prioritise and allocate  research funding better using  costs and benefits. It is gaining increasing recognition for its utility. The costs and benefits of an intervention are weighed up alongside the value of information to reduce uncertainty.  By studying the benefits and costs of each new proposed intervention and the value of information to reduce uncertainty it becomes possible to identify topics where further research offers the greatest value. Research funders can then rank topics in order of value to determine areas of high priority. 
