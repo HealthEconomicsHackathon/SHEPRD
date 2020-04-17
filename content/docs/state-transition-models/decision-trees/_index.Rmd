@@ -3,7 +3,8 @@ output: md_document
 ---
 
 ```{r include = FALSE}
-base_dir <- "~/Documents/dev/hackathon/sheprd/static" # where the blog's static files are locally
+blog_dir <- strsplit(getwd(), "content")[[1]][1]
+base_dir <- paste0(blog_dir, "static")
 base_url <- "/"
 fig_path <- "images/"
 
