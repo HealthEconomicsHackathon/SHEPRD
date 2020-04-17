@@ -1,6 +1,7 @@
 ---
 title: Introduction
 type: docs
+bookToc: false
 scripts: [tree]
 ---
 
