@@ -13,6 +13,8 @@
 1. Add or update content (see below for details on content templates.)
 1. Open a pull request from your fork into master of this repo. Netlify will run some 
 automated checks on your pull request and allow you to see a deploy preview with the changes.
+1. If you are fixing an existing issue, in the pull request description please link the issue using 
+keyword in the pull request description so that it will be automatically updated; see https://help.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword
 
 ### Adding or updating content
 
