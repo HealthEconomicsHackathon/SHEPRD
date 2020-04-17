@@ -1,8 +1,7 @@
 ---
-title: "Probabilistic Sensitivity Analysis"
-output: html_document
+output: md_document
 ---
-# Probabilistic sensitivity analysis Packages
+# Probabilistic Sensitivity Analysis
 
 ## Package: 
 BCEA  
@@ -23,6 +22,7 @@ Other functionality was not explored as part of this exercise.
   
 ## How do I input my data to it/what inputs does it take?
 Taken from manual and example on page 11 [https://cran.r-project.org/web/packages/BCEA/BCEA.pdf]
+
 ```{bcea}
 bcea(e, c, ref = 1, interventions = NULL, Kmax = 50000, wtp = NULL, plot = FALSE)
 where is states

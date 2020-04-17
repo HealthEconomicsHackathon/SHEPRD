@@ -1,11 +1,8 @@
-
 ---
-title: "Decision Trees"
-bookCollapseSection: yes
-weight: 20
+output: md_document
 ---
 
-# DECISION TREE PACKAGES
+# Decision Trees
 
 Note for cohort state transition decision tree models, whereby input parameter values are stated to compute expected values, it is worth first referring to the Markov models section where the code and packages described can be used and simpified for the decision tree case, as stated in a heemod package vignette: https://cran.r-project.org/web/packages/heemod/vignettes/a_introduction.html
 

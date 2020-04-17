@@ -1,9 +1,4 @@
----
-title: Microsimulation Modelling Packages Available on CRAN
-output: html_document
----
-
-# Microsimulation Modelling Packages
+# Microsimulation Modelling
 
 Packages Available on CRAN
 

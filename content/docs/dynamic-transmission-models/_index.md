@@ -1,7 +1,5 @@
 ---
-bookCollapseSection: true
-title: Dynamic Transmission Models
-output: html_document
+output: md_document
 ---
 
 # Dynamic Transmission Models

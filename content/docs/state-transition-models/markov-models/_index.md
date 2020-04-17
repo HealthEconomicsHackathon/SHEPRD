@@ -1,7 +1,3 @@
----
-title: "Markov Models"
-output: html_document
----
 # Markov Models
 
 A comparison of some of the main Markov model packages from:
@@ -94,7 +90,6 @@ Good for when there are the same states across the comparison strategies - “st
 In terms of cost-effectiveness analysis, run_model() gives you an R object which includes outputs like a data.frame showing expected value costs and effects for each strategy  
 
 run_model() gives you an R object which includes outputs like a data.frame showing expected value costs and effects for each strategy
-
 
  
 | cost          | life.years| n_indiv | strategy_names | 
