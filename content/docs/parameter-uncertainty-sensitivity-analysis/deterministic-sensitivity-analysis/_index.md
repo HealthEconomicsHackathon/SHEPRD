@@ -1,12 +1,10 @@
 Deterministic Sensitivity Analysis
 ==================================
 
-Package:
---------
+Package: heemod
+---------------
 
-heemod
-
-### Maintained by:
+### Maintained by
 
 Kevin Zarca - <kevin.zarca@gmail.com> (
 <https://cran.r-project.org/web/packages/heemod/heemod.pdf> and

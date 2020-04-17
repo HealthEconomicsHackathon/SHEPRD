@@ -4,7 +4,7 @@ output: md_document
 
 # Dynamic Transmission Models
 
-## Introduction:
+## Introduction
 Dynamic models are generally used for communicable diseases. Unlike static models which assume that infection risk is constant, in dynamic models the infection risk parameter is variable. These models can be deterministic or stochastic, individual or cohort based. 
 
 See also: https://www.ispor.org/docs/default-source/resources/outcomes-research-guidelines-index/dynamic_transmission_modeling-5.pdf?sfvrsn=86c71849_0.
@@ -27,13 +27,13 @@ Building a dynamic transmission model often requires more than one package. Howe
 
 # Transmisison Model Packages:
 
-## Package: 
+## Package: DSAIDE
 DSAIDE - Dynamical Systems Approach to Infectious Disease Epidemiology (Ecology/Evolution)
 
-### Maintained by: 
+### Maintained by
 Andreas Handel (ahandel@uga.edu)
 
-## URLs:
+## URLs
 https://CRAN.R-project.org/package=DSAIDE 
 https://ahgroup.github.io/DSAIDE
 https://github.com/ahgroup/DSAIDE

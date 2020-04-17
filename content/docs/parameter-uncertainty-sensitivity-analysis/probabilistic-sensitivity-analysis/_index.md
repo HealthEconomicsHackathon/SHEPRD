@@ -3,8 +3,7 @@ output: md_document
 ---
 # Probabilistic Sensitivity Analysis
 
-## Package: 
-BCEA  
+## Package: BCEA  
 
 ### Maintained by  
 Gianluca Baio <gianluca@stats.ucl.ac.uk>  

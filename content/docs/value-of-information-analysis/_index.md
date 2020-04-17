@@ -13,14 +13,14 @@ Eg. Perform an economic evaluation of the next steps in a project.
 
 # VOI Packages
 
-## Package: 
+## Package: SAVI
 SAVI (Sheffield Accelerated Value of Information)
 
 Available from CRAN
 (https://www.sheffield.ac.uk/polopoly_fs/1.528134!/file/Instructions_for_installing_the_SAVI_R_package.pdf) 
 OR as an Rshiny server application  (http://savi.shef.ac.uk/SAVI/)
 
-### Maintained by:
+### Maintained by
 Mark Strong (savi@sheffield.ac.uk)
 
 ## What does this package do?
@@ -39,13 +39,13 @@ There are also test data files on their website and github which you can practic
 ## What outputs do I get?
 Generates tabular output of and overall expected value of perfect information (EVPI), a partial EVPI for each parameter 
 
-## Package: 
+## Package: RANE
 RANE (Rapid Assessment of Need for Evidence)
 Available as an Rshiny server application (https://shiny.york.ac.uk/rane/).
 
 No CRAN page available
 
-## Maintained by:
+## Maintained by
 David Glynn (https://github.com/david-glynn)
 
 ## What does this package do?
@@ -60,7 +60,7 @@ Does not appear to require user to input own files and instead requires you to f
 ## What outputs do I get?
 Output is in easy read format for user and and provides text on the treatment with expected highest benefit, displays expected outcomes for each treatment and the consequences of uncertainty. 
 
-## Other packages to explore but not detailed here:
+## Other packages to explore but not detailed here
 The BCEA package (https://cran.r-project.org/web/packages/BCEA/BCEA.pdf) also is reportedly able to calculate VOI through removing lineard dependents in the ‘CreateInputs’ function. We could not find further information or sample code with this. 
 See Probabilistic Sensitivty Analysis section of SHEPRD for more information on BCEA.
 

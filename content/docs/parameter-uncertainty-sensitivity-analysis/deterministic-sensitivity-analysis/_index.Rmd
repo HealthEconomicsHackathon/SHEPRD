@@ -3,10 +3,9 @@ output: md_document
 ---
 # Deterministic Sensitivity Analysis
 
-## Package: 
-heemod
+## Package: heemod
 
-### Maintained by:
+### Maintained by
 Kevin Zarca - kevin.zarca@gmail.com ( https://cran.r-project.org/web/packages/heemod/heemod.pdf and https://cran.r-project.org/web/packages/heemod/index.html)
 
 ## What does this package do?
