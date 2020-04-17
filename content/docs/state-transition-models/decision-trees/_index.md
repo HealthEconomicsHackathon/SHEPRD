@@ -58,7 +58,7 @@ Sample code
            vColor="GNI",
            type="value") 
 
-![](/home/alex/Documents/dev/hackathon/sheprd/content/docs/state-transition-models/decision-trees/_index_files/figure-markdown_strict/unnamed-chunk-1-1.png)
+![](/images/unnamed-chunk-2-1.png)
 
     library(data.tree)
     GNI2014$continent <- as.character(GNI2014$continent)
