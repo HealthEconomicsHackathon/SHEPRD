@@ -1,0 +1,41 @@
+---
+output: md_document
+---
+
+# Page Title
+
+## Introduction
+Explain briefly what this modelling technique involves
+
+## When might I use this?
+Explain when this type of model can be applied
+
+## Package: my awesome package
+
+### Maintained by
+Author Authorson (author@example.com)
+(https://cran.r-project.org/link/to/package/documentation)
+
+## What does this package do?
+This package is used to do something really great
+
+## How do I input my data to it/what inputs does it take?
+This package accepts inputs in a range of formats...
+
+## What outputs do I get?
+The package produces...
+
+## Sample code
+```{r}
+library('my-awesome-package')
+## a minimal code example
+```
+
+## Other helpful resources
+Here's a shiny app using this package : https://website.com
+
+## Package: another awesome package
+include as many packages as you like
+
+## Other packages to explore but not detailed here
+List other packages that might be relevant but are not detailed above

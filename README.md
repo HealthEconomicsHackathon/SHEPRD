@@ -6,21 +6,15 @@
 
 ### Installation
 
-1. clone this repo:
-
-    1. with ssh: `git clone git@github.com:HealthEconomicsHackathon/signpost.git`
-    1. or with https: `git clone https://github.com/HealthEconomicsHackathon/signpost.git`
-    
-1. install [hugo](https://gohugo.io/getting-started/installing/)
+1. Fork this repo
+1. Install [hugo](https://gohugo.io/getting-started/installing/)
 
 ### Workflow
-1. create a new branch
-    `git checkout -b my_new_branch`
-1. add or update documentation (see below for details)
-1. commit and push your changes to git
-1. open a pull request from your branch into master 
+1. Add or update content (see below for details on content templates.)
+1. Open a pull request from your fork into master of this repo. Netlify will run some 
+automated checks on your pull request and allow you to see a deploy preview with the changes.
 
-### Adding package documentation
+### Adding or updating content
 
 All model and package documentation lives in the `content/docs` directory. This directory has a tree structure, 
 e.g.
@@ -33,16 +27,23 @@ e.g.
                             └── _index.md
 ```
 
+To add a new section you will first add a new directory or sub-directory, and then a new documentation page inside 
+the new directory.
 Documentation can either be a normal 
 [Markdown](https://www.markdownguide.org/cheat-sheet/) or an [RMarkdown](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) document
-and it must be named either `_index.md` or `_index.Rmd`, respectively.
+and it must be named either `_index.md` or `_index.Rmd`, respectively. Where possible, i.e. if your content does not 
+contain any chunks of R code, use regular markdown.
+
+All `_index.md` and `_index.Rmd` files should adhere to the templates provided in the 
+[templates](https://github.com/HealthEconomicsHackathon/SHEPRD/tree/master/templates) folder.
+
+**Important: if using an .Rmd file please knit it locally and commit both the .Rmd, the compiled .md and any 
+generated assets** 
 
 ### Viewing changes locally
 
-1. if using RMarkdown, knit any new .Rmd files to .md files
-    
-1. serve the site locally by running from bash:
+1. if using RMarkdown, knit any new .Rmd files to .md files first
+     
+1. serve the site locally by running from the command line:
 
     `hugo serve`
-
-

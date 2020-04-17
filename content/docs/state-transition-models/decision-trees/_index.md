@@ -11,12 +11,10 @@ stated in a heemod package vignette:
 Many of the packages detailed below are focused on creating data tree
 structures.
 
-Package:
---------
+Package: data.tree
+------------------
 
-data.tree
-
-### Maintained by:
+### Maintained by
 
 Christoph Glur (<christoph.glur@ipub.com>)
 (<https://cran.r-project.org/web/packages/data.tree/vignettes/data.tree.html#introduction>
@@ -95,7 +93,8 @@ Sample code
     ## 26  °--Africa                   
     ## 27      °--... 48 nodes w/ 0 sub
 
-#### (code example is from Christopher Glur's <https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html#jenny-lind-decision-tree-plotting>)
+(code example is from Christopher Glur's
+<https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html#jenny-lind-decision-tree-plotting>)
 
 Other helpful resources
 -----------------------
@@ -105,12 +104,10 @@ package ranging from financial applications to a genetic mutation
 algorithm
 (<https://cran.r-project.org/web/packages/data.tree/vignettes/applications.html>)
 
-Package:
---------
+Package: party
+--------------
 
-party
-
-### maintained by:
+### Maintained by
 
 Torsten Hothorn (<Torsten.Hothorn@R-project.org>)
 
@@ -150,11 +147,9 @@ Sample code
 Other packages
 --------------
 
-### (not discussed in full)
-
-Party was updated in 2015 to the package Partykit, this includes a
-reimplementation of ctree() and an extended reimplementation of mob(),
-as well as a variety of other features
+(not discussed in full) Party was updated in 2015 to the package
+Partykit, this includes a reimplementation of ctree() and an extended
+reimplementation of mob(), as well as a variety of other features
 (<https://cran.r-project.org/web/packages/partykit/index.html> and
 <http://partykit.r-forge.r-project.org/partykit/>).
 
@@ -167,12 +162,10 @@ There’s also a variety of online support available, for example: -
 <https://www.tutorialspoint.com/r/r_decision_tree.htm> -
 <http://www.sthda.com/english/articles/35-statistical-machine-learning-essentials/141-cart-model-decision-tree-essentials/#loading-required-r-packages>
 
-Package:
---------
+Package: rpart
+--------------
 
-rpart
-
-### maintained by:
+### Maintained by
 
 Beth Atkinson (<atkinson@mayo.edu>)
 
@@ -220,8 +213,8 @@ example:
 -   <https://www.gormanalysis.com/blog/decision-trees-in-r-using-rpart/>
 -   <https://freakonometrics.hypotheses.org/tag/rpart>
 
-Other packages to explore but not detailed here:
-------------------------------------------------
+Other packages to explore but not detailed here
+-----------------------------------------------
 
 ### Make decision trees or networks
 
