@@ -1,3 +1,7 @@
+---
+output: md_document
+---
+
 # State Transition Models
 
 ## Introduction

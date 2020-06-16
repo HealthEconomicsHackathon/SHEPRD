@@ -1,6 +1,3 @@
----
-output: md_document
----
 # Probabilistic Sensitivity Analysis
 
 ## Package: BCEA  
