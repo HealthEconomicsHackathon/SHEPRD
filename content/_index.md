@@ -11,8 +11,6 @@ This webpage aims to help you navigate you through the forest of R packages that
 
 This decision tree-style compendium was created over 2 days as part of a R Hackathon (6th - 7th November 2019), with work continued until 2020. The R Hackathon was organised by Dr. Nathan Green & Imperial College London (https://n8thangreen.wixsite.com/hermes-hack-london)
 
-### Last updated April 2020.
-
 Creators and current contributors are:
 [@nichola_naylor](https://twitter.com/nichola_naylor), 
 [@collepto1](https://twitter.com/collepto1), [@kd_katdavis](https://twitter.com/kd_katdavis), Arthi Vasantharoopan,[@RositsaKolarova](https://twitter.com/rositsakolarova), Monique Tan and  
@@ -23,9 +21,13 @@ This is not exhaustive but covers some of the key packages and coding literature
 
 This webpage is most useful for those who have some understanding or experience in R. If you are new to R, please first consult the starter mannual: Copyright (1999–2018) R Core Team, W. N. Venables, D. M. Smith and the R Core Team, "An Introduction to R. Notes on R: A Programming Environment for Data Analysis and Graphics Version 3.6.3 (2020-02-29)". Open Access: https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf 
 
-If there are any issues with the website or information presented in it, please contact Nichola Naylor - nichola.naylor@lshtm.ac.uk
 
-Related Github repository: https://github.com/HealthEconomicsHackathon/SHEPRD 
+### To contribute to SHEPRD:
+Please follow the README instructions on README.md document available at the related Github repository: https://github.com/HealthEconomicsHackathon/SHEPRD.
+
+Please use the templates provided within the repository for new webpages. 
+
+If there are any issues with the website or information presented in it, please contact Nichola Naylor - nichola.naylor@lshtm.ac.uk
 
 <div id="tree"></div>
 
