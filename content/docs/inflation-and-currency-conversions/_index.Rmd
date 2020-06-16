@@ -1,0 +1,99 @@
+---
+output: md_document
+---
+
+```{r include = FALSE}
+blog_dir <- strsplit(getwd(), "content")[[1]][1]
+base_dir <- paste0(blog_dir, "static")
+base_url <- "/"
+fig_path <- "images/"
+
+knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
+knitr::opts_chunk$set(fig.path = fig_path)
+```
+# Inflation and Currency Conversions
+
+## Introduction
+We often need to adjust costs into specific currencies and years.
+
+## When might I use this?
+If needing to convert to unit or output costs into US dollars, local currency or international dollars using Gross Domestic Product values, in present or historical values. 
+
+# Inflation and cost data packages
+
+## Package: wbstats
+Programmatic Access to Data and Statistics from the World Bank
+API
+
+### Maintained by
+Jesse Piburn <piburnjo@ornl.gov>
+
+## URLs
+https://cran.r-project.org/web/packages/wbstats/wbstats.pdf
+https://cran.r-project.org/web/packages/wbstats/vignettes/Using_the_wbstats_package.html
+
+## What does this package do?
+The package contains downloadable data from the World Bank.
+
+## How do I input my data to it/what inputs does it take?
+Not applicable
+
+## What outputs do I get?
+See https://cran.r-project.org/web/packages/wbstats/vignettes/Using_the_wbstats_package.html 
+
+## Sample code section
+```{r}
+library(wbstats)
+library(data.table)
+
+vars <- wbsearch(pattern = "GDP")
+View(vars)
+rm(vars)
+pop.data <- wb(indicator = "NY.GDP.DEFL.KD.ZG")
+pop.data <- as.data.table(pop.data)
+
+
+pop.data <- pop.data[country=="World"]  
+pop.data[ , date := as.numeric(date)]
+pop.data[ , index := value]
+pop.data[ , year := date]
+
+# adapted from - inflatbly package - https://github.com/HealthEconomicsHackathon/inflatably
+
+inflation_adjust_cost_custom <- function(from_year,
+                                         to_year,
+                                         from_cost,
+                                         inflation_df) {
+
+  if (from_year %% 1 != 0) stop("From date must be an integer valued whole year")
+  if (to_year %% 1 != 0) stop("To date must be an integer valued whole year")
+  if (from_cost < 0) stop("Cost must be non-negative")
+  if(!from_year %in% inflation_df$year) stop("from year not in look-up table")
+  if(!to_year %in% inflation_df$year) stop("to year not in look-up table")
+
+  from_index <- inflation_df[inflation_df$year == from_year, "index"]
+  to_index <- inflation_df[inflation_df$year == to_year, "index"]
+
+  to_cost <- from_cost * (to_index/from_index)
+
+  return(to_cost)
+}
+
+
+primary.cost <- data.table(mean_cost = c(100:120))
+
+
+for (i in 1:nrow(primary.cost)){
+  primary.cost[i, mean_i := inflation_adjust_cost_custom(2010,2018,primary.cost$mean_cost[i], pop.data)]
+}
+print(primary.cost)
+
+```
+
+## Other packages
+'Rilostat' - bulk download of ilostat database. Useful for labour statistics.
+https://cran.r-project.org/web/packages/Rilostat/Rilostat.pdf
+
+## Other helpful resources
+‘countrycode'- Convert Country Names and Country Codes into standardised formats.
+https://cran.r-project.org/web/packages/countrycode/countrycode.pdf 

@@ -1,0 +1,127 @@
+---
+output: md_document
+---
+
+
+
+<div id="inflation-and-currency-conversions" class="section level1">
+<h1>Inflation and Currency Conversions</h1>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>We often need to adjust costs into specific currencies and years.</p>
+</div>
+<div id="when-might-i-use-this" class="section level2">
+<h2>When might I use this?</h2>
+<p>If needing to convert to unit or output costs into US dollars, local currency or international dollars using Gross Domestic Product values, in present or historical values.</p>
+</div>
+</div>
+<div id="inflation-and-cost-data-packages" class="section level1">
+<h1>Inflation and cost data packages</h1>
+<div id="package-wbstats" class="section level2">
+<h2>Package: wbstats</h2>
+<p>Programmatic Access to Data and Statistics from the World Bank
+API</p>
+<div id="maintained-by" class="section level3">
+<h3>Maintained by</h3>
+<p>Jesse Piburn <a href="mailto:piburnjo@ornl.gov" class="email">piburnjo@ornl.gov</a></p>
+</div>
+</div>
+<div id="urls" class="section level2">
+<h2>URLs</h2>
+<p><a href="https://cran.r-project.org/web/packages/wbstats/wbstats.pdf" class="uri">https://cran.r-project.org/web/packages/wbstats/wbstats.pdf</a>
+<a href="https://cran.r-project.org/web/packages/wbstats/vignettes/Using_the_wbstats_package.html" class="uri">https://cran.r-project.org/web/packages/wbstats/vignettes/Using_the_wbstats_package.html</a></p>
+</div>
+<div id="what-does-this-package-do" class="section level2">
+<h2>What does this package do?</h2>
+<p>The package contains downloadable data from the World Bank.</p>
+</div>
+<div id="how-do-i-input-my-data-to-itwhat-inputs-does-it-take" class="section level2">
+<h2>How do I input my data to it/what inputs does it take?</h2>
+<p>Not applicable</p>
+</div>
+<div id="what-outputs-do-i-get" class="section level2">
+<h2>What outputs do I get?</h2>
+<p>See <a href="https://cran.r-project.org/web/packages/wbstats/vignettes/Using_the_wbstats_package.html" class="uri">https://cran.r-project.org/web/packages/wbstats/vignettes/Using_the_wbstats_package.html</a></p>
+</div>
+<div id="sample-code-section" class="section level2">
+<h2>Sample code section</h2>
+<pre class="r"><code>library(wbstats)</code></pre>
+<pre><code>## Warning: package &#39;wbstats&#39; was built under R version 3.6.2</code></pre>
+<pre class="r"><code>library(data.table)</code></pre>
+<pre><code>## Warning: package &#39;data.table&#39; was built under R version 3.6.3</code></pre>
+<pre class="r"><code>vars &lt;- wbsearch(pattern = &quot;GDP&quot;)
+View(vars)
+rm(vars)
+pop.data &lt;- wb(indicator = &quot;NY.GDP.DEFL.KD.ZG&quot;)
+pop.data &lt;- as.data.table(pop.data)
+
+
+pop.data &lt;- pop.data[country==&quot;World&quot;]  
+pop.data[ , date := as.numeric(date)]
+pop.data[ , index := value]
+pop.data[ , year := date]
+
+# adapted from - inflatbly package - https://github.com/HealthEconomicsHackathon/inflatably
+
+inflation_adjust_cost_custom &lt;- function(from_year,
+                                         to_year,
+                                         from_cost,
+                                         inflation_df) {
+
+  if (from_year %% 1 != 0) stop(&quot;From date must be an integer valued whole year&quot;)
+  if (to_year %% 1 != 0) stop(&quot;To date must be an integer valued whole year&quot;)
+  if (from_cost &lt; 0) stop(&quot;Cost must be non-negative&quot;)
+  if(!from_year %in% inflation_df$year) stop(&quot;from year not in look-up table&quot;)
+  if(!to_year %in% inflation_df$year) stop(&quot;to year not in look-up table&quot;)
+
+  from_index &lt;- inflation_df[inflation_df$year == from_year, &quot;index&quot;]
+  to_index &lt;- inflation_df[inflation_df$year == to_year, &quot;index&quot;]
+
+  to_cost &lt;- from_cost * (to_index/from_index)
+
+  return(to_cost)
+}
+
+
+primary.cost &lt;- data.table(mean_cost = c(100:120))
+
+
+for (i in 1:nrow(primary.cost)){
+  primary.cost[i, mean_i := inflation_adjust_cost_custom(2010,2018,primary.cost$mean_cost[i], pop.data)]
+}
+print(primary.cost)</code></pre>
+<pre><code>##     mean_cost   mean_i
+##  1:       100 65.10135
+##  2:       101 65.75236
+##  3:       102 66.40338
+##  4:       103 67.05439
+##  5:       104 67.70540
+##  6:       105 68.35642
+##  7:       106 69.00743
+##  8:       107 69.65844
+##  9:       108 70.30946
+## 10:       109 70.96047
+## 11:       110 71.61148
+## 12:       111 72.26250
+## 13:       112 72.91351
+## 14:       113 73.56452
+## 15:       114 74.21554
+## 16:       115 74.86655
+## 17:       116 75.51756
+## 18:       117 76.16858
+## 19:       118 76.81959
+## 20:       119 77.47060
+## 21:       120 78.12162
+##     mean_cost   mean_i</code></pre>
+</div>
+<div id="other-packages" class="section level2">
+<h2>Other packages</h2>
+<p>‘Rilostat’ - bulk download of ilostat database. Useful for labour statistics.
+<a href="https://cran.r-project.org/web/packages/Rilostat/Rilostat.pdf" class="uri">https://cran.r-project.org/web/packages/Rilostat/Rilostat.pdf</a></p>
+</div>
+<div id="other-helpful-resources" class="section level2">
+<h2>Other helpful resources</h2>
+<p>‘countrycode’- Convert Country Names and Country Codes into standardised formats.
+<a href="https://cran.r-project.org/web/packages/countrycode/countrycode.pdf" class="uri">https://cran.r-project.org/web/packages/countrycode/countrycode.pdf</a></p>
+</div>
+</div>
