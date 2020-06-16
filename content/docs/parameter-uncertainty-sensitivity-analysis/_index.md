@@ -1,7 +1,3 @@
----
-output: md_document
----
-
 # Parameter Uncertainty and Sensitivity Analysis
 
 ## Introduction
