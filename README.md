@@ -57,3 +57,7 @@ generated files which should appear in the ./static folder**
 1. serve the site locally by running from the command line:
 
     `hugo serve`
+
+#### If using Rstudio 
+Still use the templates and instructions as above, but once changes have been made run "blogdown::build_site()" within the console before pushing to Github.
+See: https://bookdown.org/yihui/blogdown/local-preview.html
