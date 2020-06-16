@@ -49,10 +49,7 @@ API</p>
 <pre><code>## Warning: package &#39;wbstats&#39; was built under R version 3.6.2</code></pre>
 <pre class="r"><code>library(data.table)</code></pre>
 <pre><code>## Warning: package &#39;data.table&#39; was built under R version 3.6.3</code></pre>
-<pre class="r"><code>vars &lt;- wbsearch(pattern = &quot;GDP&quot;)
-View(vars)
-rm(vars)
-pop.data &lt;- wb(indicator = &quot;NY.GDP.DEFL.KD.ZG&quot;)
+<pre class="r"><code>pop.data &lt;- wb(indicator = &quot;NY.GDP.DEFL.KD.ZG&quot;)
 pop.data &lt;- as.data.table(pop.data)
 
 

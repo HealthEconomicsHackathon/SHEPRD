@@ -46,9 +46,6 @@ See https://cran.r-project.org/web/packages/wbstats/vignettes/Using_the_wbstats_
 library(wbstats)
 library(data.table)
 
-vars <- wbsearch(pattern = "GDP")
-View(vars)
-rm(vars)
 pop.data <- wb(indicator = "NY.GDP.DEFL.KD.ZG")
 pop.data <- as.data.table(pop.data)
 

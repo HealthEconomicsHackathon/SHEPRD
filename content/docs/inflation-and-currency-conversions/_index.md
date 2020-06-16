@@ -59,9 +59,6 @@ Sample code section
 
     ## Warning: package 'data.table' was built under R version 3.6.3
 
-    vars <- wbsearch(pattern = "GDP")
-    View(vars)
-    rm(vars)
     pop.data <- wb(indicator = "NY.GDP.DEFL.KD.ZG")
     pop.data <- as.data.table(pop.data)
 
