@@ -1,8 +1,8 @@
 ---
 title: Introduction
 type: docs
-bookToc: false
 scripts: [tree]
+bookToc: false
 ---
 
 # Signposting Health Economic Packages in R for Decision Modelling (SHEPRD)
@@ -30,6 +30,7 @@ Please use the templates provided within the repository for new webpages.
 If there are any issues with the website or information presented in it, please contact Nichola Naylor - nichola.naylor@lshtm.ac.uk
 
 <div id="tree"></div>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 
 
 ### Other work compiling packages that were used/viewed or could be useful in the future are:
@@ -80,4 +81,3 @@ Monique Tan - Monique is a PhD student working on the nutrition and internationa
 Dr. Alex Hill - Alex is a professional software engineer employed by the MRC Centre for Outbreak Analysis and Modelling, at Imperial College London. Alex set up the Github repository, organised the structure of the webpage code and set up (and updated) the SHEPRD webpage throughout the hackathon and update (2020) sessions.
 
 
-<script src="https://d3js.org/d3.v5.min.js"></script>
