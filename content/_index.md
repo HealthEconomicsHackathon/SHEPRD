@@ -1,8 +1,8 @@
 ---
 title: Introduction
 type: docs
-bookToc: false
 scripts: [tree]
+bookToc: false
 ---
 
 # Signposting Health Economic Packages in R for Decision Modelling (SHEPRD)
@@ -10,8 +10,6 @@ scripts: [tree]
 This webpage aims to help you navigate you through the forest of R packages that can be used in health economics and signpost you to the most appropriate one, given your intended health economic analysis. 
 
 This decision tree-style compendium was created over 2 days as part of a R Hackathon (6th - 7th November 2019), with work continued until 2020. The R Hackathon was organised by Dr. Nathan Green & Imperial College London (https://n8thangreen.wixsite.com/hermes-hack-london)
-
-### Last updated April 2020.
 
 Creators and current contributors are:
 [@nichola_naylor](https://twitter.com/nichola_naylor), 
@@ -23,11 +21,16 @@ This is not exhaustive but covers some of the key packages and coding literature
 
 This webpage is most useful for those who have some understanding or experience in R. If you are new to R, please first consult the starter mannual: Copyright (1999–2018) R Core Team, W. N. Venables, D. M. Smith and the R Core Team, "An Introduction to R. Notes on R: A Programming Environment for Data Analysis and Graphics Version 3.6.3 (2020-02-29)". Open Access: https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf 
 
+
+### To contribute to SHEPRD:
+Please follow the README instructions on README.md document available at the related Github repository: https://github.com/HealthEconomicsHackathon/SHEPRD.
+
+Please use the templates provided within the repository for new webpages. 
+
 If there are any issues with the website or information presented in it, please contact Nichola Naylor - nichola.naylor@lshtm.ac.uk
 
-Related Github repository: https://github.com/HealthEconomicsHackathon/SHEPRD 
-
 <div id="tree"></div>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 
 
 ### Other work compiling packages that were used/viewed or could be useful in the future are:
@@ -78,4 +81,3 @@ Monique Tan - Monique is a PhD student working on the nutrition and internationa
 Dr. Alex Hill - Alex is a professional software engineer employed by the MRC Centre for Outbreak Analysis and Modelling, at Imperial College London. Alex set up the Github repository, organised the structure of the webpage code and set up (and updated) the SHEPRD webpage throughout the hackathon and update (2020) sessions.
 
 
-<script src="https://d3js.org/d3.v5.min.js"></script>

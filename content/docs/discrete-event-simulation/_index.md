@@ -1,7 +1,3 @@
----
-output: md_document
----
-
 # Discrete Event Simulation
 
 ## Introduction

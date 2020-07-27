@@ -1,7 +1,3 @@
----
-output: md_document
----
-
 # Microsimulation Modelling
 
 Packages Available on CRAN
