@@ -2,11 +2,16 @@ var children = [];
 
 function createNode(p, children) {
     var c = [];
-    var name = p[0];
+    var slug = p[0];
     var href = p[1];
 
-    if (pages[name]) {
-        pages[name].map(function(p) { createNode(p, c)})
+    var fragments = slug.split("/");
+    var name = fragments.pop();
+    while (!name) {
+        name = fragments.pop().replace(/-/g, " ")
+    }
+    if (pages[slug]) {
+        pages[slug].map(function(p) { createNode(p, c)})
     }
 
     children.push({
@@ -16,7 +21,7 @@ function createNode(p, children) {
     });
 }
 
-pages["Docs"].map(function(p) {createNode(p, children)});
+pages["/docs/"].map(function(p) {createNode(p, children)});
 
 var treeData = {
     children: children

@@ -7,22 +7,22 @@
 {{end}}
 
 {{ define "section" }}
-{{ $parent := .Title }}
+{{ $parent := .CurrentSection.RelPermalink }}
 {{ if gt (len .Pages) 0 }}
     <script>pages["{{ $parent }}"] = []</script>
 {{ end }}
 {{ range .Pages }}
-<script>pages["{{ $parent }}"].push(["{{ .Title }}", "{{ .Permalink }}"])</script>
-    {{ if eq .Kind "section" }}
-        {{ template "section" . }}
+<script>pages["{{ $parent }}"].push(["{{ .RelPermalink }}", "{{ .Permalink }}"])</script>
+    {{ if .IsPage }}
+        {{ template "page" . }}
     {{ else }}
-        {{ template "page" }}
+        {{ template "section" . }}
     {{ end }}
 {{ end }}
 {{ end }}
 
 {{ define "page" }}
-    <script>console.log("page", "{{.Title}}"); pages.push("{{ .Title }}")</script>
+    <script>pages.push("{{ .RelPermalink }}")</script>
 {{ end }}
 
 {{ if (isset .Params "scripts") }}

@@ -6,3 +6,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
 BookLogo = 'logo.png'
+
+[markup.goldmark.renderer]
+unsafe = true

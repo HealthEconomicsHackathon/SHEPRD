@@ -13,8 +13,7 @@ This decision tree-style compendium was created over 2 days as part of a R Hacka
 
 Creators and current contributors are:
 [@nichola_naylor](https://twitter.com/nichola_naylor), 
-[@collepto1](https://twitter.com/collepto1), [@kd_katdavis](https://twitter.com/kd_katdavis), Arthi Vasantharoopan,[@RositsaKolarova](https://twitter.com/rositsakolarova), Monique Tan and  
- [@alexhillphd](https://twitter.com/alexhillphd)
+[@collepto1](https://twitter.com/collepto1), [@kd_katdavis](https://twitter.com/kd_katdavis), Arthi Vasantharoopan, [@RositsaKolarova](https://twitter.com/rositsakolarova), Monique Tan and [@alexhillphd](https://twitter.com/alexhillphd)
  
 By clicking on the various model subheadings, information about R packages and code available will be displayed.
 This is not exhaustive but covers some of the key packages and coding literature in relation to health economic evaluation models.
@@ -22,18 +21,18 @@ This is not exhaustive but covers some of the key packages and coding literature
 This webpage is most useful for those who have some understanding or experience in R. If you are new to R, please first consult the starter mannual: Copyright (1999–2018) R Core Team, W. N. Venables, D. M. Smith and the R Core Team, "An Introduction to R. Notes on R: A Programming Environment for Data Analysis and Graphics Version 3.6.3 (2020-02-29)". Open Access: https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf 
 
 
-### To contribute to SHEPRD:
+<div id="tree"></div>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+
+## To contribute to SHEPRD:
 Please follow the README instructions on README.md document available at the related Github repository: https://github.com/HealthEconomicsHackathon/SHEPRD.
 
 Please use the templates provided within the repository for new webpages. 
 
 If there are any issues with the website or information presented in it, please contact Nichola Naylor - nichola.naylor@lshtm.ac.uk
 
-<div id="tree"></div>
-<script src="https://d3js.org/d3.v5.min.js"></script>
-
-
-### Other work compiling packages that were used/viewed or could be useful in the future are:
+## Other work compiling packages that were used/viewed or could be useful in the future are:
 
 * n8thangreen / health_economics_R_packages. https://github.com/n8thangreen/health_economics_R_packages [last accessed 28/02/2020]
 
@@ -46,7 +45,7 @@ If there are any issues with the website or information presented in it, please 
 * This work describes a framework for R coding and health economics that could be implemented in your coding:
 Alarid-Escudero, F., Krijkamp, E.M., Pechlivanoglou, P., Jalal, H., Kao, S.Y.Z., Yang, A. and Enns, E.A., 2019. A need for change! A coding framework for improving transparency in decision modeling. PharmacoEconomics, 37(11), pp.1329-1339. 
 
-### We have split different health economic modelling approaches by ISPOR task-force classifications:
+## We have split different health economic modelling approaches by ISPOR task-force classifications:
 
 * State–Transition Models (source:  https://www.ispor.org/docs/default-source/resources/outcomes-research-guidelines-index/state-transition_modeling-3.pdf?sfvrsn=c71c04a_0)
 Decision tree 
