@@ -18,6 +18,15 @@ Shiny applications may be particularly useful...
  
 ## Resources
 
+### Advanced shiny app and source code for a fast, time-dependant 3-State Markov model
+
+* **Shiny Application**:
+[https://darkpeakanalytics.shinyapps.io/sadm-mk2/](https://darkpeakanalytics.shinyapps.io/sadm-mk2/)
+
+* **Source code**:
+[https://github.com/bitowaqr/sadm-mk2](https://github.com/bitowaqr/sadm-mk2)
+
+
 ### Tutorial: building a simple shiny app for a 4-State Markov model
 
 
